@@ -1,0 +1,1164 @@
+Imports Successful.
+Net Init Complete.
+RecordIter Setup Done.
+Epoch[0] Batch [49]     Speed: 215.204253 samples/sec   top1-err=0.998750     top5-err=0.993125
+Epoch[0] Batch [99]     Speed: 304.246539 samples/sec   top1-err=0.999062     top5-err=0.994687
+Epoch[0] Batch [149]     Speed: 304.691710 samples/sec   top1-err=0.998333     top5-err=0.994167
+Epoch[0] Batch [199]     Speed: 305.292337 samples/sec   top1-err=0.998281     top5-err=0.993906
+Epoch[0] Batch [249]     Speed: 304.777227 samples/sec   top1-err=0.998250     top5-err=0.992500
+Epoch[0] Batch [299]     Speed: 304.993849 samples/sec   top1-err=0.998333     top5-err=0.992917
+Epoch[0] Batch [349]     Speed: 305.002374 samples/sec   top1-err=0.998304     top5-err=0.993125
+Epoch[0] Batch [399]     Speed: 304.071698 samples/sec   top1-err=0.998437     top5-err=0.993516
+Epoch[0] Batch [449]     Speed: 304.285124 samples/sec   top1-err=0.998333     top5-err=0.993194
+Epoch[0] Batch [499]     Speed: 304.232926 samples/sec   top1-err=0.998250     top5-err=0.992938
+Epoch[0] Batch [549]     Speed: 303.740365 samples/sec   top1-err=0.998239     top5-err=0.992500
+Epoch[0] Batch [599]     Speed: 304.120823 samples/sec   top1-err=0.998281     top5-err=0.992500
+Epoch[0] Batch [649]     Speed: 304.598858 samples/sec   top1-err=0.998317     top5-err=0.992308
+Epoch[0] Batch [699]     Speed: 303.845309 samples/sec   top1-err=0.998259     top5-err=0.992188
+Epoch[0] Batch [749]     Speed: 304.494471 samples/sec   top1-err=0.998167     top5-err=0.991708
+Epoch[0] Batch [799]     Speed: 305.457629 samples/sec   top1-err=0.998203     top5-err=0.991484
+Epoch[0] Batch [849]     Speed: 304.870797 samples/sec   top1-err=0.998199     top5-err=0.991324
+Epoch[0] Batch [899]     Speed: 303.287907 samples/sec   top1-err=0.998056     top5-err=0.990972
+Epoch[0] Batch [949]     Speed: 303.883118 samples/sec   top1-err=0.998059     top5-err=0.990888
+Epoch[0] Batch [999]     Speed: 304.909651 samples/sec   top1-err=0.998031     top5-err=0.990844
+Epoch[0] Batch [1049]     Speed: 303.818746 samples/sec   top1-err=0.997857     top5-err=0.990565
+Epoch[0] Batch [1099]     Speed: 305.092642 samples/sec   top1-err=0.997756     top5-err=0.990199
+Epoch[0] Batch [1149]     Speed: 302.935194 samples/sec   top1-err=0.997772     top5-err=0.990109
+Epoch[0] Batch [1199]     Speed: 303.301560 samples/sec   top1-err=0.997682     top5-err=0.989948
+Epoch[0] Batch [1249]     Speed: 303.723044 samples/sec   top1-err=0.997625     top5-err=0.989800
+Epoch[0] Batch [1299]     Speed: 302.058099 samples/sec   top1-err=0.997596     top5-err=0.989615
+Epoch[0] Batch [1349]     Speed: 303.997180 samples/sec   top1-err=0.997639     top5-err=0.989398
+Epoch[0] Batch [1399]     Speed: 304.306442 samples/sec   top1-err=0.997500     top5-err=0.989018
+Epoch[0] Batch [1449]     Speed: 303.930076 samples/sec   top1-err=0.997457     top5-err=0.988815
+Epoch[0] Batch [1499]     Speed: 302.751735 samples/sec   top1-err=0.997500     top5-err=0.988604
+Epoch[0] Batch [1549]     Speed: 303.585317 samples/sec   top1-err=0.997560     top5-err=0.988508
+Epoch[0] Batch [1599]     Speed: 303.551632 samples/sec   top1-err=0.997598     top5-err=0.988340
+Epoch[0] Batch [1649]     Speed: 303.568851 samples/sec   top1-err=0.997595     top5-err=0.988258
+Epoch[0] Batch [1699]     Speed: 303.244765 samples/sec   top1-err=0.997555     top5-err=0.988217
+Epoch[0] Batch [1749]     Speed: 304.030688 samples/sec   top1-err=0.997571     top5-err=0.988018
+Epoch[0] Batch [1799]     Speed: 303.428918 samples/sec   top1-err=0.997604     top5-err=0.987986
+Epoch[0] Batch [1849]     Speed: 304.333725 samples/sec   top1-err=0.997568     top5-err=0.987922
+Epoch[0] Batch [1899]     Speed: 304.845439 samples/sec   top1-err=0.997549     top5-err=0.987697
+Epoch[0] Batch [1949]     Speed: 304.234705 samples/sec   top1-err=0.997500     top5-err=0.987436
+Epoch[0] Batch [1999]     Speed: 305.207600 samples/sec   top1-err=0.997469     top5-err=0.987313
+Epoch[0] Batch [2049]     Speed: 303.335956 samples/sec   top1-err=0.997439     top5-err=0.987165
+Epoch[0] Batch [2099]     Speed: 304.186054 samples/sec   top1-err=0.997262     top5-err=0.986935
+Epoch[0] Batch [2149]     Speed: 304.069246 samples/sec   top1-err=0.997195     top5-err=0.986628
+Epoch[0] Batch [2199]     Speed: 303.526961 samples/sec   top1-err=0.997202     top5-err=0.986534
+Epoch[0] Batch [2249]     Speed: 303.619874 samples/sec   top1-err=0.997194     top5-err=0.986361
+Epoch[0] Batch [2299]     Speed: 301.431837 samples/sec   top1-err=0.997133     top5-err=0.986168
+Epoch[0] Batch [2349]     Speed: 302.640339 samples/sec   top1-err=0.997035     top5-err=0.985918
+Epoch[0] Batch [2399]     Speed: 304.808138 samples/sec   top1-err=0.997031     top5-err=0.985846
+Epoch[0] Batch [2449]     Speed: 302.778494 samples/sec   top1-err=0.997003     top5-err=0.985791
+Epoch[0] Batch [2499]     Speed: 303.739416 samples/sec   top1-err=0.996950     top5-err=0.985650
+Epoch[0] Batch [2549]     Speed: 303.768468 samples/sec   top1-err=0.996789     top5-err=0.985417
+Epoch[0] Batch [2599]     Speed: 303.007756 samples/sec   top1-err=0.996695     top5-err=0.985168
+Epoch[0] Batch [2649]     Speed: 302.907834 samples/sec   top1-err=0.996663     top5-err=0.985000
+Epoch[0] Batch [2699]     Speed: 303.966061 samples/sec   top1-err=0.996586     top5-err=0.984734
+Epoch[0] Batch [2749]     Speed: 304.047824 samples/sec   top1-err=0.996557     top5-err=0.984625
+Epoch[0] Batch [2799]     Speed: 304.567395 samples/sec   top1-err=0.996484     top5-err=0.984364
+Epoch[0] Batch [2849]     Speed: 303.604792 samples/sec   top1-err=0.996480     top5-err=0.984287
+Epoch[0] Batch [2899]     Speed: 304.785020 samples/sec   top1-err=0.996369     top5-err=0.984030
+Epoch[0] Batch [2949]     Speed: 304.310499 samples/sec   top1-err=0.996303     top5-err=0.983761
+Epoch[0] Batch [2999]     Speed: 304.370910 samples/sec   top1-err=0.996240     top5-err=0.983510
+Epoch[0] Batch [3049]     Speed: 304.898638 samples/sec   top1-err=0.996148     top5-err=0.983156
+Epoch[0] Batch [3099]     Speed: 304.361123 samples/sec   top1-err=0.996119     top5-err=0.983024
+Epoch[0] Batch [3149]     Speed: 304.686079 samples/sec   top1-err=0.996091     top5-err=0.982817
+Epoch[0] Batch [3199]     Speed: 304.225782 samples/sec   top1-err=0.995986     top5-err=0.982568
+Epoch[0] Batch [3249]     Speed: 304.396120 samples/sec   top1-err=0.995962     top5-err=0.982288
+Epoch[0] Batch [3299]     Speed: 304.969094 samples/sec   top1-err=0.995928     top5-err=0.982112
+Epoch[0] Batch [3349]     Speed: 305.113393 samples/sec   top1-err=0.995802     top5-err=0.981716
+Epoch[0] Batch [3399]     Speed: 303.553555 samples/sec   top1-err=0.995744     top5-err=0.981480
+Epoch[0] Batch [3449]     Speed: 304.338583 samples/sec   top1-err=0.995688     top5-err=0.981241
+Epoch[0] Batch [3499]     Speed: 304.661846 samples/sec   top1-err=0.995625     top5-err=0.980946
+Epoch[0] Batch [3549]     Speed: 304.700951 samples/sec   top1-err=0.995572     top5-err=0.980713
+Epoch[0] Batch [3599]     Speed: 304.150499 samples/sec   top1-err=0.995486     top5-err=0.980434
+Epoch[0] Batch [3649]     Speed: 304.018044 samples/sec   top1-err=0.995411     top5-err=0.980274
+Epoch[0] Batch [3699]     Speed: 304.759649 samples/sec   top1-err=0.995304     top5-err=0.979983
+Epoch[0] Batch [3749]     Speed: 304.527149 samples/sec   top1-err=0.995292     top5-err=0.979833
+Epoch[0] Batch [3799]     Speed: 304.004052 samples/sec   top1-err=0.995280     top5-err=0.979729
+Epoch[0] Batch [3849]     Speed: 304.102480 samples/sec   top1-err=0.995195     top5-err=0.979424
+Epoch[0] Batch [3899]     Speed: 304.273867 samples/sec   top1-err=0.995112     top5-err=0.979111
+Epoch[0] Batch [3949]     Speed: 305.184199 samples/sec   top1-err=0.995079     top5-err=0.978884
+Epoch[0] Batch [3999]     Speed: 302.000518 samples/sec   top1-err=0.995000     top5-err=0.978672
+Epoch[0] Batch [4049]     Speed: 303.384501 samples/sec   top1-err=0.994931     top5-err=0.978418
+Epoch[0] Batch [4099]     Speed: 303.782218 samples/sec   top1-err=0.994886     top5-err=0.978224
+Epoch[0] Batch [4149]     Speed: 302.831862 samples/sec   top1-err=0.994812     top5-err=0.977959
+Epoch[0] Batch [4199]     Speed: 303.515567 samples/sec   top1-err=0.994747     top5-err=0.977716
+Epoch[0] Batch [4249]     Speed: 303.937536 samples/sec   top1-err=0.994691     top5-err=0.977463
+Epoch[0] Batch [4299]     Speed: 304.004809 samples/sec   top1-err=0.994637     top5-err=0.977158
+Epoch[0] Batch [4349]     Speed: 300.278770 samples/sec   top1-err=0.994540     top5-err=0.976875
+Epoch[0] Batch [4399]     Speed: 300.973820 samples/sec   top1-err=0.994467     top5-err=0.976534
+Epoch[0] Batch [4449]     Speed: 303.344485 samples/sec   top1-err=0.994368     top5-err=0.976159
+Epoch[0] Batch [4499]     Speed: 304.470916 samples/sec   top1-err=0.994299     top5-err=0.975958
+Epoch[0] Batch [4549]     Speed: 304.505109 samples/sec   top1-err=0.994251     top5-err=0.975680
+Epoch[0] Batch [4599]     Speed: 303.754044 samples/sec   top1-err=0.994253     top5-err=0.975462
+Epoch[0] Batch [4649]     Speed: 304.224237 samples/sec   top1-err=0.994126     top5-err=0.975047
+Epoch[0] Batch [4699]     Speed: 303.632444 samples/sec   top1-err=0.994029     top5-err=0.974734
+Epoch[0] Batch [4749]     Speed: 304.540153 samples/sec   top1-err=0.993993     top5-err=0.974500
+Epoch[0] Batch [4799]     Speed: 304.855008 samples/sec   top1-err=0.993919     top5-err=0.974173
+Epoch[0] Batch [4849]     Speed: 304.993502 samples/sec   top1-err=0.993808     top5-err=0.973866
+Epoch[0] Batch [4899]     Speed: 303.922051 samples/sec   top1-err=0.993744     top5-err=0.973559
+Epoch[0] Batch [4949]     Speed: 304.366700 samples/sec   top1-err=0.993681     top5-err=0.973258
+Epoch[0] Batch [4999]     Speed: 303.880421 samples/sec   top1-err=0.993587     top5-err=0.972975
+Epoch[0] Batch [5049]     Speed: 305.221398 samples/sec   top1-err=0.993484     top5-err=0.972642
+Epoch[0] Batch [5099]     Speed: 303.755942 samples/sec   top1-err=0.993425     top5-err=0.972396
+Epoch[0] Batch [5149]     Speed: 304.034407 samples/sec   top1-err=0.993319     top5-err=0.972021
+Epoch[0] Batch [5199]     Speed: 304.283358 samples/sec   top1-err=0.993179     top5-err=0.971641
+Epoch[0] Batch [5249]     Speed: 303.564169 samples/sec   top1-err=0.993065     top5-err=0.971315
+Epoch[0] Batch [5299]     Speed: 304.814396 samples/sec   top1-err=0.993007     top5-err=0.971002
+Epoch[0] Batch [5349]     Speed: 303.994247 samples/sec   top1-err=0.992926     top5-err=0.970765
+Epoch[0] Batch [5399]     Speed: 304.254788 samples/sec   top1-err=0.992847     top5-err=0.970428
+Epoch[0] Batch [5449]     Speed: 304.239036 samples/sec   top1-err=0.992775     top5-err=0.970120
+Epoch[0] Batch [5499]     Speed: 304.172804 samples/sec   top1-err=0.992665     top5-err=0.969818
+Epoch[0] Batch [5549]     Speed: 304.651528 samples/sec   top1-err=0.992584     top5-err=0.969420
+Epoch[0] Batch [5599]     Speed: 304.075776 samples/sec   top1-err=0.992511     top5-err=0.969135
+Epoch[0] Batch [5649]     Speed: 303.730893 samples/sec   top1-err=0.992412     top5-err=0.968850
+Epoch[0] Batch [5699]     Speed: 303.192758 samples/sec   top1-err=0.992303     top5-err=0.968520
+Epoch[0] Batch [5749]     Speed: 302.186633 samples/sec   top1-err=0.992272     top5-err=0.968380
+Epoch[0] Batch [5799]     Speed: 303.532919 samples/sec   top1-err=0.992150     top5-err=0.968055
+Epoch[0] Batch [5849]     Speed: 303.149794 samples/sec   top1-err=0.992051     top5-err=0.967655
+Epoch[0] Batch [5899]     Speed: 304.450667 samples/sec   top1-err=0.991981     top5-err=0.967378
+Epoch[0] Batch [5949]     Speed: 304.926512 samples/sec   top1-err=0.991901     top5-err=0.967106
+Epoch[0] Batch [5999]     Speed: 303.868133 samples/sec   top1-err=0.991781     top5-err=0.966818
+Epoch[0] Batch [6049]     Speed: 303.538410 samples/sec   top1-err=0.991606     top5-err=0.966451
+Epoch[0] Batch [6099]     Speed: 304.269907 samples/sec   top1-err=0.991516     top5-err=0.966163
+Epoch[0] Batch [6149]     Speed: 303.216444 samples/sec   top1-err=0.991453     top5-err=0.965818
+Epoch[0] Batch [6199]     Speed: 301.380409 samples/sec   top1-err=0.991326     top5-err=0.965534
+Epoch[0] Batch [6249]     Speed: 303.527222 samples/sec   top1-err=0.991270     top5-err=0.965200
+Epoch[0] Batch [6299]     Speed: 304.272721 samples/sec   top1-err=0.991176     top5-err=0.964886
+Epoch[0] Batch [6349]     Speed: 304.028195 samples/sec   top1-err=0.991043     top5-err=0.964562
+Epoch[0] Batch [6399]     Speed: 304.625446 samples/sec   top1-err=0.990962     top5-err=0.964185
+Epoch[0] Batch [6449]     Speed: 302.902789 samples/sec   top1-err=0.990858     top5-err=0.963915
+Epoch[0] Batch [6499]     Speed: 304.326107 samples/sec   top1-err=0.990764     top5-err=0.963558
+Epoch[0] Batch [6549]     Speed: 303.924873 samples/sec   top1-err=0.990663     top5-err=0.963149
+Epoch[0] Batch [6599]     Speed: 303.067555 samples/sec   top1-err=0.990526     top5-err=0.962846
+Epoch[0] Batch [6649]     Speed: 304.092504 samples/sec   top1-err=0.990461     top5-err=0.962613
+Epoch[0] Batch [6699]     Speed: 303.500467 samples/sec   top1-err=0.990378     top5-err=0.962327
+Epoch[0] Batch [6749]     Speed: 303.001750 samples/sec   top1-err=0.990343     top5-err=0.962139
+Epoch[0] Batch [6799]     Speed: 304.964396 samples/sec   top1-err=0.990253     top5-err=0.961847
+Epoch[0] Batch [6849]     Speed: 303.172391 samples/sec   top1-err=0.990192     top5-err=0.961515
+Epoch[0] Batch [6899]     Speed: 304.973238 samples/sec   top1-err=0.990091     top5-err=0.961141
+Epoch[0] Batch [6949]     Speed: 303.826284 samples/sec   top1-err=0.989969     top5-err=0.960800
+Epoch[0] Batch [6999]     Speed: 304.740288 samples/sec   top1-err=0.989839     top5-err=0.960504
+Epoch[0] Batch [7049]     Speed: 303.878728 samples/sec   top1-err=0.989778     top5-err=0.960208
+Epoch[0] Batch [7099]     Speed: 300.676545 samples/sec   top1-err=0.989701     top5-err=0.959855
+Epoch[0] Batch [7149]     Speed: 300.222780 samples/sec   top1-err=0.989594     top5-err=0.959554
+Epoch[0] Batch [7199]     Speed: 299.817404 samples/sec   top1-err=0.989501     top5-err=0.959271
+Epoch[0] Batch [7249]     Speed: 299.978696 samples/sec   top1-err=0.989362     top5-err=0.958905
+Epoch[0] Batch [7299]     Speed: 299.731541 samples/sec   top1-err=0.989277     top5-err=0.958549
+Epoch[0] Batch [7349]     Speed: 299.091137 samples/sec   top1-err=0.989137     top5-err=0.958244
+Epoch[0] Batch [7399]     Speed: 300.073327 samples/sec   top1-err=0.989046     top5-err=0.957893
+Epoch[0] Batch [7449]     Speed: 299.913676 samples/sec   top1-err=0.988893     top5-err=0.957483
+Epoch[0] Batch [7499]     Speed: 299.739922 samples/sec   top1-err=0.988808     top5-err=0.957025
+Epoch[0] Batch [7549]     Speed: 300.446612 samples/sec   top1-err=0.988696     top5-err=0.956668
+Epoch[0] Batch [7599]     Speed: 300.758340 samples/sec   top1-err=0.988573     top5-err=0.956316
+Epoch[0] Batch [7649]     Speed: 299.842039 samples/sec   top1-err=0.988493     top5-err=0.956107
+Epoch[0] Batch [7699]     Speed: 300.138712 samples/sec   top1-err=0.988369     top5-err=0.955735
+Epoch[0] Batch [7749]     Speed: 300.118256 samples/sec   top1-err=0.988270     top5-err=0.955456
+Epoch[0] Batch [7799]     Speed: 301.189515 samples/sec   top1-err=0.988161     top5-err=0.955104
+Epoch[0] Batch [7849]     Speed: 300.909312 samples/sec   top1-err=0.988097     top5-err=0.954833
+Epoch[0] Batch [7899]     Speed: 299.311670 samples/sec   top1-err=0.988014     top5-err=0.954482
+Epoch[0] Batch [7949]     Speed: 301.433529 samples/sec   top1-err=0.987928     top5-err=0.954253
+Epoch[0] Batch [7999]     Speed: 300.499767 samples/sec   top1-err=0.987844     top5-err=0.953910
+Epoch[0] Batch [8049]     Speed: 300.817551 samples/sec   top1-err=0.987733     top5-err=0.953618
+Epoch[0] Batch [8099]     Speed: 301.994158 samples/sec   top1-err=0.987627     top5-err=0.953272
+Epoch[0] Batch [8149]     Speed: 301.262216 samples/sec   top1-err=0.987531     top5-err=0.952979
+Epoch[0] Batch [8199]     Speed: 300.922414 samples/sec   top1-err=0.987473     top5-err=0.952645
+Epoch[0] Batch [8249]     Speed: 303.402565 samples/sec   top1-err=0.987318     top5-err=0.952314
+Epoch[0] Batch [8299]     Speed: 304.204420 samples/sec   top1-err=0.987206     top5-err=0.952014
+Epoch[0] Batch [8349]     Speed: 304.365830 samples/sec   top1-err=0.987081     top5-err=0.951643
+Epoch[0] Batch [8399]     Speed: 304.006833 samples/sec   top1-err=0.986998     top5-err=0.951440
+Epoch[0] Batch [8449]     Speed: 304.596563 samples/sec   top1-err=0.986893     top5-err=0.951072
+Epoch[0] Batch [8499]     Speed: 304.074963 samples/sec   top1-err=0.986798     top5-err=0.950728
+Epoch[0] Batch [8549]     Speed: 304.424054 samples/sec   top1-err=0.986692     top5-err=0.950523
+Epoch[0] Batch [8599]     Speed: 304.526430 samples/sec   top1-err=0.986566     top5-err=0.950185
+Epoch[0] Batch [8649]     Speed: 304.587259 samples/sec   top1-err=0.986460     top5-err=0.949924
+Epoch[0] Batch [8699]     Speed: 304.075983 samples/sec   top1-err=0.986358     top5-err=0.949598
+Epoch[0] Batch [8749]     Speed: 304.848347 samples/sec   top1-err=0.986257     top5-err=0.949221
+Epoch[0] Batch [8799]     Speed: 303.785271 samples/sec   top1-err=0.986143     top5-err=0.948874
+Epoch[0] Batch [8849]     Speed: 304.253974 samples/sec   top1-err=0.986056     top5-err=0.948602
+Epoch[0] Batch [8899]     Speed: 303.877930 samples/sec   top1-err=0.985945     top5-err=0.948230
+Epoch[0] Batch [8949]     Speed: 304.736635 samples/sec   top1-err=0.985831     top5-err=0.947926
+Epoch[0] Batch [8999]     Speed: 304.702653 samples/sec   top1-err=0.985740     top5-err=0.947615
+Epoch[0] Batch [9049]     Speed: 303.580579 samples/sec   top1-err=0.985653     top5-err=0.947314
+Epoch[0] Batch [9099]     Speed: 303.699884 samples/sec   top1-err=0.985598     top5-err=0.946968
+Epoch[0] Batch [9149]     Speed: 302.480590 samples/sec   top1-err=0.985471     top5-err=0.946646
+Epoch[0] Batch [9199]     Speed: 303.524503 samples/sec   top1-err=0.985336     top5-err=0.946287
+Epoch[0] Batch [9249]     Speed: 302.238499 samples/sec   top1-err=0.985196     top5-err=0.945929
+Epoch[0] Batch [9299]     Speed: 304.179491 samples/sec   top1-err=0.985104     top5-err=0.945659
+Epoch[0] Batch [9349]     Speed: 303.959948 samples/sec   top1-err=0.985047     top5-err=0.945438
+Epoch[0] Batch [9399]     Speed: 304.301709 samples/sec   top1-err=0.984940     top5-err=0.945037
+Epoch[0] Batch [9449]     Speed: 303.294802 samples/sec   top1-err=0.984805     top5-err=0.944679
+Epoch[0] Batch [9499]     Speed: 303.055032 samples/sec   top1-err=0.984701     top5-err=0.944401
+Epoch[0] Batch [9549]     Speed: 304.486002 samples/sec   top1-err=0.984614     top5-err=0.944120
+Epoch[0] Batch [9599]     Speed: 304.052865 samples/sec   top1-err=0.984518     top5-err=0.943818
+Epoch[0] Batch [9649]     Speed: 303.812901 samples/sec   top1-err=0.984385     top5-err=0.943507
+Epoch[0] Batch [9699]     Speed: 303.783635 samples/sec   top1-err=0.984307     top5-err=0.943209
+Epoch[0] Batch [9749]     Speed: 303.975644 samples/sec   top1-err=0.984179     top5-err=0.942949
+Epoch[0] Batch [9799]     Speed: 303.630809 samples/sec   top1-err=0.984056     top5-err=0.942650
+Epoch[0] Batch [9849]     Speed: 304.175244 samples/sec   top1-err=0.983991     top5-err=0.942357
+Epoch[0] Batch [9899]     Speed: 304.277867 samples/sec   top1-err=0.983914     top5-err=0.942064
+Epoch[0] Batch [9949]     Speed: 303.935444 samples/sec   top1-err=0.983763     top5-err=0.941680
+Epoch[0] Batch [9999]     Speed: 303.778450 samples/sec   top1-err=0.983638     top5-err=0.941325
+Epoch[0] Batch [10049]     Speed: 304.936197 samples/sec   top1-err=0.983539     top5-err=0.940986
+Epoch[0] Batch [10099]     Speed: 304.047493 samples/sec   top1-err=0.983416     top5-err=0.940678
+Epoch[0] Batch [10149]     Speed: 303.549339 samples/sec   top1-err=0.983294     top5-err=0.940354
+Epoch[0] Batch [10199]     Speed: 304.186067 samples/sec   top1-err=0.983199     top5-err=0.940064
+Epoch[0] Batch [10249]     Speed: 303.306604 samples/sec   top1-err=0.983116     top5-err=0.939741
+Epoch[0] Batch [10299]     Speed: 304.177671 samples/sec   top1-err=0.982982     top5-err=0.939399
+Epoch[0] Batch [10349]     Speed: 303.488334 samples/sec   top1-err=0.982883     top5-err=0.939121
+Epoch[0] Batch [10399]     Speed: 305.418774 samples/sec   top1-err=0.982816     top5-err=0.938840
+Epoch[0] Batch [10449]     Speed: 305.093405 samples/sec   top1-err=0.982727     top5-err=0.938478
+Epoch[0] Batch [10499]     Speed: 303.834579 samples/sec   top1-err=0.982598     top5-err=0.938208
+Epoch[0] Batch [10549]     Speed: 303.356236 samples/sec   top1-err=0.982447     top5-err=0.937826
+Epoch[0] Batch [10599]     Speed: 303.792216 samples/sec   top1-err=0.982353     top5-err=0.937559
+Epoch[0] Batch [10649]     Speed: 304.751843 samples/sec   top1-err=0.982218     top5-err=0.937242
+Epoch[0] Batch [10699]     Speed: 304.363055 samples/sec   top1-err=0.982097     top5-err=0.936942
+Epoch[0] Batch [10749]     Speed: 303.985558 samples/sec   top1-err=0.981974     top5-err=0.936587
+Epoch[0] Batch [10799]     Speed: 302.893560 samples/sec   top1-err=0.981834     top5-err=0.936259
+Epoch[0] Batch [10849]     Speed: 303.763078 samples/sec   top1-err=0.981725     top5-err=0.935953
+Epoch[0] Batch [10899]     Speed: 304.008045 samples/sec   top1-err=0.981594     top5-err=0.935645
+Epoch[0] Batch [10949]     Speed: 303.035983 samples/sec   top1-err=0.981547     top5-err=0.935420
+Epoch[0] Batch [10999]     Speed: 304.278198 samples/sec   top1-err=0.981463     top5-err=0.935116
+Epoch[0] Batch [11049]     Speed: 304.648416 samples/sec   top1-err=0.981391     top5-err=0.934884
+Epoch[0] Batch [11099]     Speed: 305.209766 samples/sec   top1-err=0.981242     top5-err=0.934496
+Epoch[0] Batch [11149]     Speed: 303.742812 samples/sec   top1-err=0.981135     top5-err=0.934226
+Epoch[0] Batch [11199]     Speed: 304.366838 samples/sec   top1-err=0.981032     top5-err=0.933943
+Epoch[0] Batch [11249]     Speed: 304.795692 samples/sec   top1-err=0.980933     top5-err=0.933703
+Epoch[0] Batch [11299]     Speed: 304.242636 samples/sec   top1-err=0.980796     top5-err=0.933426
+Epoch[0] Batch [11349]     Speed: 305.169475 samples/sec   top1-err=0.980669     top5-err=0.933125
+Epoch[0] Batch [11399]     Speed: 303.569250 samples/sec   top1-err=0.980576     top5-err=0.932796
+Epoch[0] Batch [11449]     Speed: 304.929075 samples/sec   top1-err=0.980480     top5-err=0.932478
+Epoch[0] Batch [11499]     Speed: 306.014041 samples/sec   top1-err=0.980391     top5-err=0.932220
+Epoch[0] Batch [11549]     Speed: 304.907407 samples/sec   top1-err=0.980298     top5-err=0.931959
+Epoch[0] Batch [11599]     Speed: 303.569634 samples/sec   top1-err=0.980221     top5-err=0.931646
+Epoch[0] Batch [11649]     Speed: 303.741396 samples/sec   top1-err=0.980118     top5-err=0.931339
+Epoch[0] Batch [11699]     Speed: 304.532635 samples/sec   top1-err=0.980013     top5-err=0.931031
+Epoch[0] Batch [11749]     Speed: 304.711687 samples/sec   top1-err=0.979926     top5-err=0.930707
+Epoch[0] Batch [11799]     Speed: 304.046639 samples/sec   top1-err=0.979828     top5-err=0.930453
+Epoch[0] Batch [11849]     Speed: 305.360420 samples/sec   top1-err=0.979702     top5-err=0.930095
+Epoch[0] Batch [11899]     Speed: 304.841188 samples/sec   top1-err=0.979588     top5-err=0.929782
+Epoch[0] Batch [11949]     Speed: 304.598263 samples/sec   top1-err=0.979474     top5-err=0.929516
+Epoch[0] Batch [11999]     Speed: 304.806670 samples/sec   top1-err=0.979388     top5-err=0.929224
+Epoch[0] Batch [12049]     Speed: 304.483225 samples/sec   top1-err=0.979253     top5-err=0.928934
+Epoch[0] Batch [12099]     Speed: 304.735486 samples/sec   top1-err=0.979127     top5-err=0.928649
+Epoch[0] Batch [12149]     Speed: 304.305807 samples/sec   top1-err=0.979038     top5-err=0.928374
+Epoch[0] Batch [12199]     Speed: 303.961793 samples/sec   top1-err=0.978937     top5-err=0.928058
+Epoch[0] Batch [12249]     Speed: 304.563359 samples/sec   top1-err=0.978819     top5-err=0.927730
+Epoch[0] Batch [12299]     Speed: 304.714011 samples/sec   top1-err=0.978717     top5-err=0.927396
+Epoch[0] Batch [12349]     Speed: 303.391455 samples/sec   top1-err=0.978618     top5-err=0.927118
+Epoch[0] Batch [12399]     Speed: 304.268045 samples/sec   top1-err=0.978495     top5-err=0.926754
+Epoch[0] Batch [12449]     Speed: 303.839545 samples/sec   top1-err=0.978394     top5-err=0.926483
+Epoch[0] Batch [12499]     Speed: 304.928548 samples/sec   top1-err=0.978252     top5-err=0.926192
+Epoch[0] Batch [12549]     Speed: 303.487703 samples/sec   top1-err=0.978160     top5-err=0.925869
+Epoch[0] Batch [12599]     Speed: 303.623721 samples/sec   top1-err=0.978058     top5-err=0.925546
+Epoch[0] Batch [12649]     Speed: 304.246346 samples/sec   top1-err=0.977957     top5-err=0.925267
+Epoch[0] Batch [12699]     Speed: 304.842933 samples/sec   top1-err=0.977822     top5-err=0.924995
+Epoch[0] Batch [12749]     Speed: 302.520979 samples/sec   top1-err=0.977750     top5-err=0.924708
+Epoch[0] Batch [12799]     Speed: 301.338038 samples/sec   top1-err=0.977668     top5-err=0.924412
+Epoch[0] Batch [12849]     Speed: 304.153297 samples/sec   top1-err=0.977585     top5-err=0.924103
+Epoch[0] Batch [12899]     Speed: 305.266702 samples/sec   top1-err=0.977432     top5-err=0.923803
+Epoch[0] Batch [12949]     Speed: 304.117805 samples/sec   top1-err=0.977343     top5-err=0.923489
+Epoch[0] Batch [12999]     Speed: 303.941666 samples/sec   top1-err=0.977279     top5-err=0.923243
+Epoch[0] Batch [13049]     Speed: 304.364312 samples/sec   top1-err=0.977189     top5-err=0.923036
+Epoch[0] Batch [13099]     Speed: 304.549302 samples/sec   top1-err=0.977080     top5-err=0.922724
+Epoch[0] Batch [13149]     Speed: 304.086882 samples/sec   top1-err=0.976958     top5-err=0.922410
+Epoch[0] Batch [13199]     Speed: 303.979664 samples/sec   top1-err=0.976858     top5-err=0.922114
+Epoch[0] Batch [13249]     Speed: 304.147576 samples/sec   top1-err=0.976767     top5-err=0.921807
+Epoch[0] Batch [13299]     Speed: 304.090754 samples/sec   top1-err=0.976652     top5-err=0.921492
+Epoch[0] Batch [13349]     Speed: 304.566773 samples/sec   top1-err=0.976547     top5-err=0.921213
+Epoch[0] Batch [13399]     Speed: 303.959150 samples/sec   top1-err=0.976469     top5-err=0.920933
+Epoch[0] Batch [13449]     Speed: 303.150766 samples/sec   top1-err=0.976348     top5-err=0.920655
+Epoch[0] Batch [13499]     Speed: 304.043966 samples/sec   top1-err=0.976250     top5-err=0.920389
+Epoch[0] Batch [13549]     Speed: 302.930176 samples/sec   top1-err=0.976135     top5-err=0.920078
+Epoch[0] Batch [13599]     Speed: 303.784116 samples/sec   top1-err=0.976027     top5-err=0.919754
+Epoch[0] Batch [13649]     Speed: 305.348415 samples/sec   top1-err=0.975920     top5-err=0.919432
+Epoch[0] Batch [13699]     Speed: 304.001201 samples/sec   top1-err=0.975821     top5-err=0.919129
+Epoch[0] Batch [13749]     Speed: 303.067501 samples/sec   top1-err=0.975725     top5-err=0.918852
+Epoch[0] Batch [13799]     Speed: 303.677620 samples/sec   top1-err=0.975605     top5-err=0.918594
+Epoch[0] Batch [13849]     Speed: 304.074426 samples/sec   top1-err=0.975546     top5-err=0.918321
+Epoch[0] Batch [13899]     Speed: 303.496665 samples/sec   top1-err=0.975387     top5-err=0.918015
+Epoch[0] Batch [13949]     Speed: 303.932030 samples/sec   top1-err=0.975293     top5-err=0.917755
+Epoch[0] Batch [13999]     Speed: 303.136785 samples/sec   top1-err=0.975163     top5-err=0.917462
+Epoch[0] Batch [14049]     Speed: 303.662945 samples/sec   top1-err=0.975076     top5-err=0.917202
+Epoch[0] Batch [14099]     Speed: 303.513288 samples/sec   top1-err=0.974989     top5-err=0.916961
+Epoch[0] Batch [14149]     Speed: 304.370427 samples/sec   top1-err=0.974934     top5-err=0.916740
+Epoch[0] Batch [14199]     Speed: 304.514602 samples/sec   top1-err=0.974842     top5-err=0.916437
+Epoch[0] Batch [14249]     Speed: 303.591291 samples/sec   top1-err=0.974735     top5-err=0.916167
+Epoch[0] Batch [14299]     Speed: 303.220184 samples/sec   top1-err=0.974613     top5-err=0.915844
+Epoch[0] Batch [14349]     Speed: 304.232291 samples/sec   top1-err=0.974503     top5-err=0.915566
+Epoch[0] Batch [14399]     Speed: 303.515333 samples/sec   top1-err=0.974408     top5-err=0.915278
+Epoch[0] Batch [14449]     Speed: 303.476298 samples/sec   top1-err=0.974308     top5-err=0.915013
+Epoch[0] Batch [14499]     Speed: 303.748737 samples/sec   top1-err=0.974183     top5-err=0.914698
+Epoch[0] Batch [14549]     Speed: 303.523172 samples/sec   top1-err=0.974072     top5-err=0.914390
+Epoch[0] Batch [14599]     Speed: 300.377208 samples/sec   top1-err=0.973968     top5-err=0.914105
+Epoch[0] Batch [14649]     Speed: 304.431898 samples/sec   top1-err=0.973855     top5-err=0.913842
+Epoch[0] Batch [14699]     Speed: 304.396810 samples/sec   top1-err=0.973767     top5-err=0.913588
+Epoch[0] Batch [14749]     Speed: 304.361137 samples/sec   top1-err=0.973684     top5-err=0.913335
+Epoch[0] Batch [14799]     Speed: 304.215273 samples/sec   top1-err=0.973545     top5-err=0.912971
+Epoch[0] Batch [14849]     Speed: 304.404487 samples/sec   top1-err=0.973455     top5-err=0.912723
+Epoch[0] Batch [14899]     Speed: 304.275950 samples/sec   top1-err=0.973358     top5-err=0.912473
+Epoch[0] Batch [14949]     Speed: 304.477147 samples/sec   top1-err=0.973276     top5-err=0.912245
+Epoch[0] Batch [14999]     Speed: 304.849261 samples/sec   top1-err=0.973137     top5-err=0.911933
+Epoch[0] Batch [15049]     Speed: 304.812402 samples/sec   top1-err=0.973048     top5-err=0.911682
+Epoch[0] Batch [15099]     Speed: 304.413876 samples/sec   top1-err=0.972939     top5-err=0.911434
+Epoch[0] Batch [15149]     Speed: 304.371435 samples/sec   top1-err=0.972834     top5-err=0.911161
+Epoch[0] Batch [15199]     Speed: 304.663630 samples/sec   top1-err=0.972732     top5-err=0.910942
+Epoch[0] Batch [15249]     Speed: 304.613196 samples/sec   top1-err=0.972611     top5-err=0.910652
+Epoch[0] Batch [15299]     Speed: 305.297532 samples/sec   top1-err=0.972504     top5-err=0.910359
+Epoch[0] Batch [15349]     Speed: 305.350194 samples/sec   top1-err=0.972398     top5-err=0.910073
+Epoch[0] Batch [15399]     Speed: 304.773725 samples/sec   top1-err=0.972293     top5-err=0.909807
+Epoch[0] Batch [15449]     Speed: 304.916675 samples/sec   top1-err=0.972178     top5-err=0.909541
+Epoch[0] Batch [15499]     Speed: 301.077401 samples/sec   top1-err=0.972083     top5-err=0.909246
+Epoch[0] Batch [15549]     Speed: 300.706940 samples/sec   top1-err=0.971994     top5-err=0.908991
+Epoch[0] Batch [15599]     Speed: 301.421642 samples/sec   top1-err=0.971907     top5-err=0.908750
+Epoch[0] Batch [15649]     Speed: 300.985105 samples/sec   top1-err=0.971819     top5-err=0.908468
+Epoch[0] Batch [15699]     Speed: 300.924303 samples/sec   top1-err=0.971706     top5-err=0.908185
+Epoch[0] Batch [15749]     Speed: 300.547637 samples/sec   top1-err=0.971613     top5-err=0.907887
+Epoch[0] Batch [15799]     Speed: 300.468149 samples/sec   top1-err=0.971507     top5-err=0.907625
+Epoch[0] Batch [15849]     Speed: 301.002317 samples/sec   top1-err=0.971404     top5-err=0.907382
+Epoch[0] Batch [15899]     Speed: 301.137116 samples/sec   top1-err=0.971313     top5-err=0.907119
+Epoch[0] Batch [15949]     Speed: 301.267531 samples/sec   top1-err=0.971193     top5-err=0.906834
+Epoch[0] Batch [15999]     Speed: 299.730792 samples/sec   top1-err=0.971125     top5-err=0.906555
+Epoch[0] Batch [16049]     Speed: 302.345240 samples/sec   top1-err=0.971040     top5-err=0.906357
+Epoch[0] Batch [16099]     Speed: 300.760159 samples/sec   top1-err=0.970932     top5-err=0.906083
+Epoch[0] Batch [16149]     Speed: 300.355012 samples/sec   top1-err=0.970805     top5-err=0.905797
+Epoch[0] Batch [16199]     Speed: 300.197384 samples/sec   top1-err=0.970710     top5-err=0.905534
+Epoch[0] Batch [16249]     Speed: 300.024965 samples/sec   top1-err=0.970623     top5-err=0.905290
+Epoch[0] Batch [16299]     Speed: 300.645752 samples/sec   top1-err=0.970552     top5-err=0.905065
+Epoch[0] Batch [16349]     Speed: 300.818306 samples/sec   top1-err=0.970466     top5-err=0.904776
+Epoch[0] Batch [16399]     Speed: 300.614279 samples/sec   top1-err=0.970362     top5-err=0.904476
+Epoch[0] Batch [16449]     Speed: 299.118279 samples/sec   top1-err=0.970251     top5-err=0.904238
+Epoch[0] Batch [16499]     Speed: 300.942764 samples/sec   top1-err=0.970134     top5-err=0.903958
+Epoch[0] Batch [16549]     Speed: 299.649073 samples/sec   top1-err=0.970019     top5-err=0.903682
+Epoch[0] Batch [16599]     Speed: 300.233068 samples/sec   top1-err=0.969938     top5-err=0.903430
+Epoch[0] Batch [16649]     Speed: 302.449740 samples/sec   top1-err=0.969835     top5-err=0.903148
+Epoch[0] Batch [16699]     Speed: 304.052493 samples/sec   top1-err=0.969725     top5-err=0.902852
+Epoch[0] Batch [16749]     Speed: 304.693439 samples/sec   top1-err=0.969608     top5-err=0.902565
+Epoch[0] Batch [16799]     Speed: 304.671611 samples/sec   top1-err=0.969518     top5-err=0.902295
+Epoch[0] Batch [16849]     Speed: 302.480195 samples/sec   top1-err=0.969410     top5-err=0.902044
+Epoch[0] Batch [16899]     Speed: 303.233022 samples/sec   top1-err=0.969268     top5-err=0.901759
+Epoch[0] Batch [16949]     Speed: 304.723697 samples/sec   top1-err=0.969152     top5-err=0.901510
+Epoch[0] Batch [16999]     Speed: 304.639192 samples/sec   top1-err=0.969063     top5-err=0.901289
+Epoch[0] Batch [17049]     Speed: 304.505717 samples/sec   top1-err=0.968948     top5-err=0.900977
+Epoch[0] Batch [17099]     Speed: 304.420698 samples/sec   top1-err=0.968781     top5-err=0.900674
+Epoch[0] Batch [17149]     Speed: 304.471455 samples/sec   top1-err=0.968661     top5-err=0.900405
+Epoch[0] Batch [17199]     Speed: 305.115807 samples/sec   top1-err=0.968527     top5-err=0.900120
+Epoch[0] Batch [17249]     Speed: 304.467712 samples/sec   top1-err=0.968440     top5-err=0.899886
+Epoch[0] Batch [17299]     Speed: 304.592236 samples/sec   top1-err=0.968333     top5-err=0.899668
+Epoch[0] Batch [17349]     Speed: 304.121333 samples/sec   top1-err=0.968192     top5-err=0.899391
+Epoch[0] Batch [17399]     Speed: 303.651334 samples/sec   top1-err=0.968087     top5-err=0.899125
+Epoch[0] Batch [17449]     Speed: 303.020795 samples/sec   top1-err=0.967984     top5-err=0.898813
+Epoch[0] Batch [17499]     Speed: 302.663557 samples/sec   top1-err=0.967896     top5-err=0.898523
+Epoch[0] Batch [17549]     Speed: 303.606303 samples/sec   top1-err=0.967808     top5-err=0.898269
+Epoch[0] Batch [17599]     Speed: 305.088523 samples/sec   top1-err=0.967694     top5-err=0.897985
+Epoch[0] Batch [17649]     Speed: 304.898513 samples/sec   top1-err=0.967594     top5-err=0.897702
+Epoch[0] Batch [17699]     Speed: 304.175837 samples/sec   top1-err=0.967489     top5-err=0.897382
+Epoch[0] Batch [17749]     Speed: 304.311341 samples/sec   top1-err=0.967389     top5-err=0.897141
+Epoch[0] Batch [17799]     Speed: 304.359674 samples/sec   top1-err=0.967275     top5-err=0.896924
+Epoch[0] Batch [17849]     Speed: 304.574223 samples/sec   top1-err=0.967195     top5-err=0.896714
+Epoch[0] Batch [17899]     Speed: 304.980459 samples/sec   top1-err=0.967112     top5-err=0.896454
+Epoch[0] Batch [17949]     Speed: 303.489817 samples/sec   top1-err=0.967007     top5-err=0.896200
+Epoch[0] Batch [17999]     Speed: 303.986384 samples/sec   top1-err=0.966891     top5-err=0.895950
+Epoch[0] Batch [18049]     Speed: 304.441386 samples/sec   top1-err=0.966773     top5-err=0.895677
+Epoch[0] Batch [18099]     Speed: 303.577214 samples/sec   top1-err=0.966689     top5-err=0.895432
+Epoch[0] Batch [18149]     Speed: 303.173103 samples/sec   top1-err=0.966575     top5-err=0.895143
+Epoch[0] Batch [18199]     Speed: 303.484025 samples/sec   top1-err=0.966506     top5-err=0.894895
+Epoch[0] Batch [18249]     Speed: 303.167364 samples/sec   top1-err=0.966368     top5-err=0.894572
+Epoch[0] Batch [18299]     Speed: 304.402857 samples/sec   top1-err=0.966288     top5-err=0.894356
+Epoch[0] Batch [18349]     Speed: 304.467905 samples/sec   top1-err=0.966182     top5-err=0.894142
+Epoch[0] Batch [18399]     Speed: 304.464093 samples/sec   top1-err=0.966065     top5-err=0.893898
+Epoch[0] Batch [18449]     Speed: 303.988560 samples/sec   top1-err=0.965947     top5-err=0.893589
+Epoch[0] Batch [18499]     Speed: 302.869802 samples/sec   top1-err=0.965843     top5-err=0.893333
+Epoch[0] Batch [18549]     Speed: 303.951784 samples/sec   top1-err=0.965760     top5-err=0.893088
+Epoch[0] Batch [18599]     Speed: 300.496107 samples/sec   top1-err=0.965657     top5-err=0.892839
+Epoch[0] Batch [18649]     Speed: 302.325286 samples/sec   top1-err=0.965526     top5-err=0.892554
+Epoch[0] Batch [18699]     Speed: 302.073313 samples/sec   top1-err=0.965423     top5-err=0.892289
+Epoch[0] Batch [18749]     Speed: 302.442230 samples/sec   top1-err=0.965303     top5-err=0.892028
+Epoch[0] Batch [18799]     Speed: 303.195210 samples/sec   top1-err=0.965213     top5-err=0.891805
+Epoch[0] Batch [18849]     Speed: 301.340068 samples/sec   top1-err=0.965099     top5-err=0.891553
+Epoch[0] Batch [18899]     Speed: 301.637071 samples/sec   top1-err=0.964993     top5-err=0.891300
+Epoch[0] Batch [18949]     Speed: 303.529143 samples/sec   top1-err=0.964926     top5-err=0.891090
+Epoch[0] Batch [18999]     Speed: 302.430004 samples/sec   top1-err=0.964803     top5-err=0.890809
+Epoch[0] Batch [19049]     Speed: 301.800259 samples/sec   top1-err=0.964703     top5-err=0.890586
+Epoch[0] Batch [19099]     Speed: 303.094534 samples/sec   top1-err=0.964594     top5-err=0.890324
+Epoch[0] Batch [19149]     Speed: 302.947967 samples/sec   top1-err=0.964475     top5-err=0.890020
+Epoch[0] Batch [19199]     Speed: 303.350683 samples/sec   top1-err=0.964364     top5-err=0.889784
+Epoch[0] Batch [19249]     Speed: 302.314173 samples/sec   top1-err=0.964269     top5-err=0.889528
+Epoch[0] Batch [19299]     Speed: 303.670777 samples/sec   top1-err=0.964177     top5-err=0.889279
+Epoch[0] Batch [19349]     Speed: 303.885650 samples/sec   top1-err=0.964088     top5-err=0.889036
+Epoch[0] Batch [19399]     Speed: 303.324508 samples/sec   top1-err=0.963956     top5-err=0.888773
+Epoch[0] Batch [19449]     Speed: 304.160231 samples/sec   top1-err=0.963888     top5-err=0.888540
+Epoch[0] Batch [19499]     Speed: 302.893888 samples/sec   top1-err=0.963796     top5-err=0.888311
+Epoch[0] Batch [19549]     Speed: 304.402692 samples/sec   top1-err=0.963699     top5-err=0.888042
+Epoch[0] Batch [19599]     Speed: 303.446672 samples/sec   top1-err=0.963621     top5-err=0.887816
+Epoch[0] Batch [19649]     Speed: 303.536461 samples/sec   top1-err=0.963516     top5-err=0.887570
+Epoch[0] Batch [19699]     Speed: 303.509142 samples/sec   top1-err=0.963399     top5-err=0.887311
+Epoch[0] Batch [19749]     Speed: 302.071450 samples/sec   top1-err=0.963316     top5-err=0.887068
+Epoch[0] Batch [19799]     Speed: 301.575531 samples/sec   top1-err=0.963199     top5-err=0.886790
+Epoch[0] Batch [19849]     Speed: 301.279609 samples/sec   top1-err=0.963079     top5-err=0.886532
+Epoch[0] Batch [19899]     Speed: 298.744016 samples/sec   top1-err=0.962977     top5-err=0.886275
+Epoch[0] Batch [19949]     Speed: 300.849552 samples/sec   top1-err=0.962896     top5-err=0.886046
+Epoch[0] Batch [19999]     Speed: 303.040349 samples/sec   top1-err=0.962811     top5-err=0.885792
+Epoch[0] Batch [20049]     Speed: 302.856188 samples/sec   top1-err=0.962689     top5-err=0.885555
+Epoch[0] Batch [20099]     Speed: 304.244926 samples/sec   top1-err=0.962579     top5-err=0.885275
+Epoch[0] Batch [20149]     Speed: 301.461707 samples/sec   top1-err=0.962457     top5-err=0.885039
+Epoch[0] Batch [20199]     Speed: 300.790639 samples/sec   top1-err=0.962379     top5-err=0.884830
+Epoch[0] Batch [20249]     Speed: 302.418106 samples/sec   top1-err=0.962267     top5-err=0.884554
+Epoch[0] Batch [20299]     Speed: 300.676410 samples/sec   top1-err=0.962204     top5-err=0.884330
+Epoch[0] Batch [20349]     Speed: 303.599353 samples/sec   top1-err=0.962124     top5-err=0.884114
+Epoch[0] Batch [20399]     Speed: 303.153710 samples/sec   top1-err=0.962039     top5-err=0.883902
+Epoch[0] Batch [20449]     Speed: 302.274724 samples/sec   top1-err=0.961910     top5-err=0.883672
+Epoch[0] Batch [20499]     Speed: 303.911742 samples/sec   top1-err=0.961845     top5-err=0.883422
+Epoch[0] Batch [20549]     Speed: 302.010209 samples/sec   top1-err=0.961764     top5-err=0.883207
+Epoch[0] Batch [20599]     Speed: 303.157627 samples/sec   top1-err=0.961673     top5-err=0.882957
+Epoch[0] Batch [20649]     Speed: 302.693208 samples/sec   top1-err=0.961568     top5-err=0.882715
+Epoch[0] Batch [20699]     Speed: 302.722878 samples/sec   top1-err=0.961455     top5-err=0.882417
+Epoch[0] Batch [20749]     Speed: 301.362274 samples/sec   top1-err=0.961372     top5-err=0.882179
+Epoch[0] Batch [20799]     Speed: 302.330326 samples/sec   top1-err=0.961271     top5-err=0.881929
+Epoch[0] Batch [20849]     Speed: 301.711114 samples/sec   top1-err=0.961163     top5-err=0.881677
+Epoch[0] Batch [20899]     Speed: 302.499638 samples/sec   top1-err=0.961053     top5-err=0.881449
+Epoch[0] Batch [20949]     Speed: 301.361286 samples/sec   top1-err=0.960961     top5-err=0.881205
+Epoch[0] Batch [20999]     Speed: 301.579434 samples/sec   top1-err=0.960857     top5-err=0.880954
+Epoch[0] Batch [21049]     Speed: 302.047291 samples/sec   top1-err=0.960776     top5-err=0.880733
+Epoch[0] Batch [21099]     Speed: 302.115320 samples/sec   top1-err=0.960696     top5-err=0.880542
+Epoch[0] Batch [21149]     Speed: 301.390290 samples/sec   top1-err=0.960582     top5-err=0.880298
+Epoch[0] Batch [21199]     Speed: 301.877846 samples/sec   top1-err=0.960491     top5-err=0.880077
+Epoch[0] Batch [21249]     Speed: 302.506742 samples/sec   top1-err=0.960421     top5-err=0.879849
+Epoch[0] Batch [21299]     Speed: 303.244847 samples/sec   top1-err=0.960321     top5-err=0.879610
+Epoch[0] Batch [21349]     Speed: 302.232945 samples/sec   top1-err=0.960214     top5-err=0.879368
+Epoch[0] Batch [21399]     Speed: 302.698355 samples/sec   top1-err=0.960123     top5-err=0.879150
+Epoch[0] Batch [21449]     Speed: 302.191776 samples/sec   top1-err=0.960013     top5-err=0.878888
+Epoch[0] Batch [21499]     Speed: 302.655762 samples/sec   top1-err=0.959919     top5-err=0.878653
+Epoch[0] Batch [21549]     Speed: 299.950982 samples/sec   top1-err=0.959823     top5-err=0.878441
+Epoch[0] Batch [21599]     Speed: 302.704704 samples/sec   top1-err=0.959729     top5-err=0.878242
+Epoch[0] Batch [21649]     Speed: 300.854758 samples/sec   top1-err=0.959610     top5-err=0.877998
+Epoch[0] Batch [21699]     Speed: 302.404874 samples/sec   top1-err=0.959474     top5-err=0.877759
+Epoch[0] Batch [21749]     Speed: 301.380044 samples/sec   top1-err=0.959379     top5-err=0.877520
+Epoch[0] Batch [21799]     Speed: 302.453107 samples/sec   top1-err=0.959300     top5-err=0.877292
+Epoch[0] Batch [21849]     Speed: 303.186416 samples/sec   top1-err=0.959186     top5-err=0.877005
+Epoch[0] Batch [21899]     Speed: 302.065060 samples/sec   top1-err=0.959097     top5-err=0.876767
+Epoch[0] Batch [21949]     Speed: 302.253527 samples/sec   top1-err=0.958988     top5-err=0.876512
+Epoch[0] Batch [21999]     Speed: 301.401376 samples/sec   top1-err=0.958886     top5-err=0.876259
+Epoch[0] Batch [22049]     Speed: 302.419360 samples/sec   top1-err=0.958801     top5-err=0.876077
+Epoch[0] Batch [22099]     Speed: 302.451226 samples/sec   top1-err=0.958729     top5-err=0.875889
+Epoch[0] Batch [22149]     Speed: 302.469275 samples/sec   top1-err=0.958630     top5-err=0.875683
+Epoch[0] Batch [22199]     Speed: 302.838422 samples/sec   top1-err=0.958535     top5-err=0.875486
+Epoch[0] Batch [22249]     Speed: 302.161121 samples/sec   top1-err=0.958441     top5-err=0.875267
+Epoch[0] Batch [22299]     Speed: 303.259715 samples/sec   top1-err=0.958370     top5-err=0.875067
+Epoch[0] Batch [22349]     Speed: 301.840208 samples/sec   top1-err=0.958237     top5-err=0.874790
+Epoch[0] Batch [22399]     Speed: 302.118612 samples/sec   top1-err=0.958146     top5-err=0.874562
+Epoch[0] Batch [22449]     Speed: 302.226698 samples/sec   top1-err=0.958040     top5-err=0.874337
+Epoch[0] Batch [22499]     Speed: 302.125766 samples/sec   top1-err=0.957943     top5-err=0.874118
+Epoch[0] Batch [22549]     Speed: 303.008303 samples/sec   top1-err=0.957856     top5-err=0.873879
+Epoch[0] Batch [22599]     Speed: 301.558185 samples/sec   top1-err=0.957760     top5-err=0.873667
+Epoch[0] Batch [22649]     Speed: 302.667474 samples/sec   top1-err=0.957666     top5-err=0.873455
+Epoch[0] Batch [22699]     Speed: 302.539663 samples/sec   top1-err=0.957583     top5-err=0.873216
+Epoch[0] Batch [22749]     Speed: 301.328621 samples/sec   top1-err=0.957474     top5-err=0.872946
+Epoch[0] Batch [22799]     Speed: 302.672047 samples/sec   top1-err=0.957344     top5-err=0.872670
+Epoch[0] Batch [22849]     Speed: 302.028708 samples/sec   top1-err=0.957237     top5-err=0.872447
+Epoch[0] Batch [22899]     Speed: 301.833909 samples/sec   top1-err=0.957137     top5-err=0.872230
+Epoch[0] Batch [22949]     Speed: 303.293966 samples/sec   top1-err=0.957052     top5-err=0.872026
+Epoch[0] Batch [22999]     Speed: 301.483674 samples/sec   top1-err=0.956954     top5-err=0.871803
+Epoch[0] Batch [23049]     Speed: 300.918649 samples/sec   top1-err=0.956847     top5-err=0.871596
+Epoch[0] Batch [23099]     Speed: 302.238472 samples/sec   top1-err=0.956748     top5-err=0.871365
+Epoch[0] Batch [23149]     Speed: 302.058901 samples/sec   top1-err=0.956647     top5-err=0.871154
+Epoch[0] Batch [23199]     Speed: 302.128500 samples/sec   top1-err=0.956536     top5-err=0.870890
+Epoch[0] Batch [23249]     Speed: 303.006456 samples/sec   top1-err=0.956441     top5-err=0.870657
+Epoch[0] Batch [23299]     Speed: 302.712719 samples/sec   top1-err=0.956324     top5-err=0.870404
+Epoch[0] Batch [23349]     Speed: 300.599305 samples/sec   top1-err=0.956237     top5-err=0.870215
+Epoch[0] Batch [23399]     Speed: 301.418501 samples/sec   top1-err=0.956123     top5-err=0.869980
+Epoch[0] Batch [23449]     Speed: 303.257701 samples/sec   top1-err=0.956031     top5-err=0.869757
+Epoch[0] Batch [23499]     Speed: 302.332736 samples/sec   top1-err=0.955922     top5-err=0.869503
+Epoch[0] Batch [23549]     Speed: 302.900123 samples/sec   top1-err=0.955843     top5-err=0.869271
+Epoch[0] Batch [23599]     Speed: 302.309148 samples/sec   top1-err=0.955743     top5-err=0.869036
+Epoch[0] Batch [23649]     Speed: 302.187259 samples/sec   top1-err=0.955640     top5-err=0.868809
+Epoch[0] Batch [23699]     Speed: 301.527089 samples/sec   top1-err=0.955539     top5-err=0.868552
+Epoch[0] Batch [23749]     Speed: 303.094876 samples/sec   top1-err=0.955413     top5-err=0.868303
+Epoch[0] Batch [23799]     Speed: 301.799079 samples/sec   top1-err=0.955323     top5-err=0.868044
+Epoch[0] Batch [23849]     Speed: 301.065150 samples/sec   top1-err=0.955214     top5-err=0.867825
+Epoch[0] Batch [23899]     Speed: 303.427615 samples/sec   top1-err=0.955107     top5-err=0.867598
+Epoch[0] Batch [23949]     Speed: 301.923113 samples/sec   top1-err=0.955020     top5-err=0.867372
+Epoch[0] Batch [23999]     Speed: 301.780730 samples/sec   top1-err=0.954892     top5-err=0.867158
+Epoch[0] Batch [24049]     Speed: 302.308998 samples/sec   top1-err=0.954780     top5-err=0.866922
+Epoch[0] Batch [24099]     Speed: 302.613332 samples/sec   top1-err=0.954706     top5-err=0.866703
+Epoch[0] Batch [24149]     Speed: 301.529081 samples/sec   top1-err=0.954600     top5-err=0.866487
+Epoch[0] Batch [24199]     Speed: 302.021150 samples/sec   top1-err=0.954495     top5-err=0.866293
+Epoch[0] Batch [24249]     Speed: 301.927786 samples/sec   top1-err=0.954383     top5-err=0.866088
+Epoch[0] Batch [24299]     Speed: 301.288726 samples/sec   top1-err=0.954272     top5-err=0.865887
+Epoch[0] Batch [24349]     Speed: 302.463713 samples/sec   top1-err=0.954167     top5-err=0.865657
+Epoch[0] Batch [24399]     Speed: 301.449046 samples/sec   top1-err=0.954082     top5-err=0.865419
+Epoch[0] Batch [24449]     Speed: 302.517692 samples/sec   top1-err=0.953971     top5-err=0.865193
+Epoch[0] Batch [24499]     Speed: 302.779177 samples/sec   top1-err=0.953874     top5-err=0.865000
+Epoch[0] Batch [24549]     Speed: 301.914162 samples/sec   top1-err=0.953783     top5-err=0.864782
+Epoch[0] Batch [24599]     Speed: 303.112605 samples/sec   top1-err=0.953690     top5-err=0.864543
+Epoch[0] Batch [24649]     Speed: 301.329284 samples/sec   top1-err=0.953619     top5-err=0.864343
+Epoch[0] Batch [24699]     Speed: 302.164781 samples/sec   top1-err=0.953531     top5-err=0.864150
+Epoch[0] Batch [24749]     Speed: 302.800011 samples/sec   top1-err=0.953438     top5-err=0.863904
+Epoch[0] Batch [24799]     Speed: 300.838831 samples/sec   top1-err=0.953363     top5-err=0.863729
+Epoch[0] Batch [24849]     Speed: 301.368594 samples/sec   top1-err=0.953276     top5-err=0.863521
+Epoch[0] Batch [24899]     Speed: 301.003951 samples/sec   top1-err=0.953199     top5-err=0.863337
+Epoch[0] Batch [24949]     Speed: 302.460782 samples/sec   top1-err=0.953082     top5-err=0.863101
+Epoch[0] Batch [24999]     Speed: 300.307298 samples/sec   top1-err=0.952984     top5-err=0.862849
+Epoch[0] Batch [25049]     Speed: 302.447014 samples/sec   top1-err=0.952895     top5-err=0.862638
+Epoch[0] Batch [25099]     Speed: 304.204420 samples/sec   top1-err=0.952783     top5-err=0.862415
+Epoch[0] Batch [25149]     Speed: 303.693204 samples/sec   top1-err=0.952674     top5-err=0.862191
+Epoch[0] Batch [25199]     Speed: 304.015276 samples/sec   top1-err=0.952586     top5-err=0.861968
+Epoch[0] Batch [25249]     Speed: 304.029820 samples/sec   top1-err=0.952491     top5-err=0.861722
+Epoch[0] Batch [25299]     Speed: 304.174651 samples/sec   top1-err=0.952384     top5-err=0.861504
+Epoch[0] Batch [25349]     Speed: 303.925107 samples/sec   top1-err=0.952282     top5-err=0.861268
+Epoch[0] Batch [25399]     Speed: 304.579573 samples/sec   top1-err=0.952199     top5-err=0.861063
+Epoch[0] Batch [25449]     Speed: 304.093468 samples/sec   top1-err=0.952090     top5-err=0.860830
+Epoch[0] Batch [25499]     Speed: 304.287484 samples/sec   top1-err=0.951990     top5-err=0.860643
+Epoch[0] Batch [25549]     Speed: 304.178746 samples/sec   top1-err=0.951888     top5-err=0.860409
+Epoch[0] Batch [25599]     Speed: 304.187529 samples/sec   top1-err=0.951808     top5-err=0.860206
+Epoch[0] Batch [25649]     Speed: 304.786708 samples/sec   top1-err=0.951719     top5-err=0.860017
+Epoch[0] Batch [25699]     Speed: 304.276074 samples/sec   top1-err=0.951642     top5-err=0.859804
+Epoch[0] Batch [25749]     Speed: 303.894044 samples/sec   top1-err=0.951534     top5-err=0.859586
+Epoch[0] Batch [25799]     Speed: 303.938004 samples/sec   top1-err=0.951423     top5-err=0.859374
+Epoch[0] Batch [25849]     Speed: 304.233298 samples/sec   top1-err=0.951310     top5-err=0.859113
+Epoch[0] Batch [25899]     Speed: 304.566192 samples/sec   top1-err=0.951223     top5-err=0.858912
+Epoch[0] Batch [25949]     Speed: 304.599674 samples/sec   top1-err=0.951133     top5-err=0.858678
+Epoch[0] Batch [25999]     Speed: 303.849752 samples/sec   top1-err=0.951059     top5-err=0.858480
+Epoch[0] Batch [26049]     Speed: 304.348203 samples/sec   top1-err=0.950944     top5-err=0.858269
+Epoch[0] Batch [26099]     Speed: 304.620150 samples/sec   top1-err=0.950855     top5-err=0.858070
+Epoch[0] Batch [26149]     Speed: 304.548307 samples/sec   top1-err=0.950767     top5-err=0.857891
+Epoch[0] Batch [26199]     Speed: 303.605740 samples/sec   top1-err=0.950694     top5-err=0.857674
+Epoch[0] Batch [26249]     Speed: 303.938376 samples/sec   top1-err=0.950593     top5-err=0.857420
+Epoch[0] Batch [26299]     Speed: 304.473058 samples/sec   top1-err=0.950488     top5-err=0.857177
+Epoch[0] Batch [26349]     Speed: 304.567574 samples/sec   top1-err=0.950389     top5-err=0.856960
+Epoch[0] Batch [26399]     Speed: 304.601015 samples/sec   top1-err=0.950310     top5-err=0.856802
+Epoch[0] Batch [26449]     Speed: 303.041566 samples/sec   top1-err=0.950213     top5-err=0.856599
+Epoch[0] Batch [26499]     Speed: 304.489884 samples/sec   top1-err=0.950086     top5-err=0.856353
+Epoch[0] Batch [26549]     Speed: 302.018840 samples/sec   top1-err=0.949956     top5-err=0.856115
+Epoch[0] Batch [26599]     Speed: 302.301699 samples/sec   top1-err=0.949860     top5-err=0.855909
+Epoch[0] Batch [26649]     Speed: 301.230965 samples/sec   top1-err=0.949784     top5-err=0.855705
+Epoch[0] Batch [26699]     Speed: 303.061314 samples/sec   top1-err=0.949686     top5-err=0.855515
+Epoch[0] Batch [26749]     Speed: 302.629039 samples/sec   top1-err=0.949588     top5-err=0.855324
+Epoch[0] Batch [26799]     Speed: 301.305919 samples/sec   top1-err=0.949506     top5-err=0.855140
+Epoch[0] Batch [26849]     Speed: 304.313921 samples/sec   top1-err=0.949406     top5-err=0.854901
+Epoch[0] Batch [26899]     Speed: 303.897512 samples/sec   top1-err=0.949287     top5-err=0.854665
+Epoch[0] Batch [26949]     Speed: 304.329515 samples/sec   top1-err=0.949205     top5-err=0.854489
+Epoch[0] Batch [26999]     Speed: 304.676286 samples/sec   top1-err=0.949103     top5-err=0.854263
+Epoch[0] Batch [27049]     Speed: 304.519728 samples/sec   top1-err=0.948996     top5-err=0.854040
+Epoch[0] Batch [27099]     Speed: 303.491711 samples/sec   top1-err=0.948913     top5-err=0.853843
+Epoch[0] Batch [27149]     Speed: 304.063625 samples/sec   top1-err=0.948811     top5-err=0.853608
+Epoch[0] Batch [27199]     Speed: 305.411129 samples/sec   top1-err=0.948719     top5-err=0.853393
+Epoch[0] Batch [27249]     Speed: 304.858692 samples/sec   top1-err=0.948600     top5-err=0.853162
+Epoch[0] Batch [27299]     Speed: 305.303546 samples/sec   top1-err=0.948492     top5-err=0.852949
+Epoch[0] Batch [27349]     Speed: 304.594627 samples/sec   top1-err=0.948392     top5-err=0.852730
+Epoch[0] Batch [27399]     Speed: 303.859631 samples/sec   top1-err=0.948274     top5-err=0.852482
+Epoch[0] Batch [27449]     Speed: 302.651954 samples/sec   top1-err=0.948190     top5-err=0.852281
+Epoch[0] Batch [27499]     Speed: 302.519001 samples/sec   top1-err=0.948105     top5-err=0.852078
+Epoch[0] Batch [27549]     Speed: 303.547554 samples/sec   top1-err=0.947988     top5-err=0.851834
+Epoch[0] Batch [27599]     Speed: 303.753591 samples/sec   top1-err=0.947906     top5-err=0.851638
+Epoch[0] Batch [27649]     Speed: 303.272173 samples/sec   top1-err=0.947801     top5-err=0.851417
+Epoch[0] Batch [27699]     Speed: 302.438372 samples/sec   top1-err=0.947702     top5-err=0.851205
+Epoch[0] Batch [27749]     Speed: 304.487618 samples/sec   top1-err=0.947583     top5-err=0.851027
+Epoch[0] Batch [27799]     Speed: 304.142021 samples/sec   top1-err=0.947483     top5-err=0.850795
+Epoch[0] Batch [27849]     Speed: 304.951328 samples/sec   top1-err=0.947374     top5-err=0.850586
+Epoch[0] Batch [27899]     Speed: 304.806574 samples/sec   top1-err=0.947289     top5-err=0.850410
+Epoch[0] Batch [27949]     Speed: 304.088742 samples/sec   top1-err=0.947172     top5-err=0.850200
+Epoch[0] Batch [27999]     Speed: 304.246277 samples/sec   top1-err=0.947051     top5-err=0.849960
+Epoch[0] Batch [28049]     Speed: 303.654824 samples/sec   top1-err=0.946947     top5-err=0.849747
+Epoch[0] Batch [28099]     Speed: 305.084570 samples/sec   top1-err=0.946862     top5-err=0.849569
+Epoch[0] Batch [28149]     Speed: 304.268583 samples/sec   top1-err=0.946777     top5-err=0.849358
+Epoch[0] Batch [28199]     Speed: 302.518497 samples/sec   top1-err=0.946672     top5-err=0.849150
+Epoch[0] Batch [28249]     Speed: 303.324179 samples/sec   top1-err=0.946575     top5-err=0.848920
+Epoch[0] Batch [28299]     Speed: 303.137716 samples/sec   top1-err=0.946486     top5-err=0.848699
+Epoch[0] Batch [28349]     Speed: 302.338008 samples/sec   top1-err=0.946390     top5-err=0.848490
+Epoch[0] Batch [28399]     Speed: 302.988946 samples/sec   top1-err=0.946278     top5-err=0.848264
+Epoch[0] Batch [28449]     Speed: 302.067861 samples/sec   top1-err=0.946186     top5-err=0.848062
+Epoch[0] Batch [28499]     Speed: 303.115507 samples/sec   top1-err=0.946094     top5-err=0.847876
+Epoch[0] Batch [28549]     Speed: 303.567986 samples/sec   top1-err=0.946000     top5-err=0.847657
+Epoch[0] Batch [28599]     Speed: 300.394956 samples/sec   top1-err=0.945900     top5-err=0.847452
+Epoch[0] Batch [28649]     Speed: 304.802739 samples/sec   top1-err=0.945827     top5-err=0.847277
+Epoch[0] Batch [28699]     Speed: 304.757697 samples/sec   top1-err=0.945736     top5-err=0.847106
+Epoch[0] Batch [28749]     Speed: 304.313424 samples/sec   top1-err=0.945638     top5-err=0.846937
+Epoch[0] Batch [28799]     Speed: 303.606962 samples/sec   top1-err=0.945554     top5-err=0.846734
+Epoch[0] Batch [28849]     Speed: 303.153368 samples/sec   top1-err=0.945472     top5-err=0.846562
+Epoch[0] Batch [28899]     Speed: 303.177130 samples/sec   top1-err=0.945367     top5-err=0.846365
+Epoch[0] Batch [28949]     Speed: 304.406931 samples/sec   top1-err=0.945269     top5-err=0.846186
+Epoch[0] Batch [28999]     Speed: 304.493117 samples/sec   top1-err=0.945164     top5-err=0.845981
+Epoch[0] Batch [29049]     Speed: 303.900567 samples/sec   top1-err=0.945067     top5-err=0.845767
+Epoch[0] Batch [29099]     Speed: 303.742248 samples/sec   top1-err=0.944947     top5-err=0.845543
+Epoch[0] Batch [29149]     Speed: 304.219658 samples/sec   top1-err=0.944865     top5-err=0.845354
+Epoch[0] Batch [29199]     Speed: 303.975919 samples/sec   top1-err=0.944777     top5-err=0.845147
+Epoch[0] Batch [29249]     Speed: 304.215452 samples/sec   top1-err=0.944699     top5-err=0.844987
+Epoch[0] Batch [29299]     Speed: 304.528793 samples/sec   top1-err=0.944610     top5-err=0.844801
+Epoch[0] Batch [29349]     Speed: 304.316847 samples/sec   top1-err=0.944525     top5-err=0.844615
+Epoch[0] Batch [29399]     Speed: 304.720321 samples/sec   top1-err=0.944435     top5-err=0.844415
+Epoch[0] Batch [29449]     Speed: 303.629051 samples/sec   top1-err=0.944321     top5-err=0.844202
+Epoch[0] Batch [29499]     Speed: 303.403169 samples/sec   top1-err=0.944221     top5-err=0.843978
+Epoch[0] Batch [29549]     Speed: 303.448785 samples/sec   top1-err=0.944147     top5-err=0.843788
+Epoch[0] Batch [29599]     Speed: 304.298080 samples/sec   top1-err=0.944055     top5-err=0.843588
+Epoch[0] Batch [29649]     Speed: 304.850798 samples/sec   top1-err=0.943928     top5-err=0.843380
+Epoch[0] Batch [29699]     Speed: 304.138741 samples/sec   top1-err=0.943844     top5-err=0.843162
+Epoch[0] Batch [29749]     Speed: 304.854745 samples/sec   top1-err=0.943748     top5-err=0.842982
+Epoch[0] Batch [29799]     Speed: 304.408077 samples/sec   top1-err=0.943655     top5-err=0.842767
+Epoch[0] Batch [29849]     Speed: 304.636730 samples/sec   top1-err=0.943553     top5-err=0.842587
+Epoch[0] Batch [29899]     Speed: 303.896232 samples/sec   top1-err=0.943451     top5-err=0.842395
+Epoch[0] Batch [29949]     Speed: 303.586182 samples/sec   top1-err=0.943361     top5-err=0.842210
+Epoch[0] Batch [29999]     Speed: 303.610685 samples/sec   top1-err=0.943265     top5-err=0.842028
+Epoch[0] Batch [30049]     Speed: 303.965538 samples/sec   top1-err=0.943162     top5-err=0.841830
+Epoch[0] Batch [30099]     Speed: 304.413324 samples/sec   top1-err=0.943078     top5-err=0.841625
+Epoch[0] Batch [30149]     Speed: 301.264421 samples/sec   top1-err=0.942964     top5-err=0.841404
+Epoch[0] Batch [30199]     Speed: 302.598159 samples/sec   top1-err=0.942887     top5-err=0.841212
+Epoch[0] Batch [30249]     Speed: 302.256223 samples/sec   top1-err=0.942809     top5-err=0.841026
+Epoch[0] Batch [30299]     Speed: 302.765012 samples/sec   top1-err=0.942723     top5-err=0.840813
+Epoch[0] Batch [30349]     Speed: 302.248422 samples/sec   top1-err=0.942662     top5-err=0.840636
+Epoch[0] Batch [30399]     Speed: 303.339480 samples/sec   top1-err=0.942567     top5-err=0.840421
+Epoch[0] Batch [30449]     Speed: 304.328411 samples/sec   top1-err=0.942489     top5-err=0.840210
+Epoch[0] Batch [30499]     Speed: 304.623275 samples/sec   top1-err=0.942399     top5-err=0.840010
+Epoch[0] Batch [30549]     Speed: 304.340432 samples/sec   top1-err=0.942307     top5-err=0.839817
+Epoch[0] Batch [30599]     Speed: 303.671217 samples/sec   top1-err=0.942194     top5-err=0.839590
+Epoch[0] Batch [30649]     Speed: 303.980697 samples/sec   top1-err=0.942099     top5-err=0.839416
+Epoch[0] Batch [30699]     Speed: 303.548914 samples/sec   top1-err=0.942006     top5-err=0.839223
+Epoch[0] Batch [30749]     Speed: 304.415423 samples/sec   top1-err=0.941919     top5-err=0.839049
+Epoch[0] Batch [30799]     Speed: 302.565771 samples/sec   top1-err=0.941823     top5-err=0.838827
+Epoch[0] Batch [30849]     Speed: 304.601277 samples/sec   top1-err=0.941719     top5-err=0.838608
+Epoch[0] Batch [30899]     Speed: 304.382741 samples/sec   top1-err=0.941637     top5-err=0.838401
+Epoch[0] Batch [30949]     Speed: 305.178578 samples/sec   top1-err=0.941542     top5-err=0.838217
+Epoch[0] Batch [30999]     Speed: 304.028594 samples/sec   top1-err=0.941454     top5-err=0.838020
+Epoch[0] Batch [31049]     Speed: 302.761993 samples/sec   top1-err=0.941376     top5-err=0.837843
+Epoch[0] Batch [31099]     Speed: 303.920689 samples/sec   top1-err=0.941266     top5-err=0.837621
+Epoch[0] Batch [31149]     Speed: 304.057535 samples/sec   top1-err=0.941171     top5-err=0.837444
+Epoch[0] Batch [31199]     Speed: 304.743028 samples/sec   top1-err=0.941080     top5-err=0.837271
+Epoch[0] Batch [31249]     Speed: 304.513344 samples/sec   top1-err=0.940989     top5-err=0.837039
+Epoch[0] Batch [31299]     Speed: 303.911453 samples/sec   top1-err=0.940894     top5-err=0.836845
+Epoch[0] Batch [31349]     Speed: 304.318185 samples/sec   top1-err=0.940825     top5-err=0.836669
+Epoch[0] Batch [31399]     Speed: 304.066022 samples/sec   top1-err=0.940736     top5-err=0.836512
+Epoch[0] Batch [31449]     Speed: 303.367344 samples/sec   top1-err=0.940656     top5-err=0.836354
+Epoch[0] Batch [31499]     Speed: 304.215687 samples/sec   top1-err=0.940584     top5-err=0.836168
+Epoch[0] Batch [31549]     Speed: 304.475613 samples/sec   top1-err=0.940520     top5-err=0.836004
+Epoch[0] Batch [31599]     Speed: 303.944240 samples/sec   top1-err=0.940436     top5-err=0.835803
+Epoch[0] Batch [31649]     Speed: 304.637560 samples/sec   top1-err=0.940351     top5-err=0.835583
+Epoch[0] Batch [31699]     Speed: 304.660103 samples/sec   top1-err=0.940252     top5-err=0.835370
+Epoch[0] Batch [31749]     Speed: 304.269424 samples/sec   top1-err=0.940168     top5-err=0.835161
+Epoch[0] Batch [31799]     Speed: 305.285421 samples/sec   top1-err=0.940084     top5-err=0.834989
+Epoch[0] Batch [31849]     Speed: 304.660891 samples/sec   top1-err=0.939994     top5-err=0.834774
+Epoch[0] Batch [31899]     Speed: 300.850024 samples/sec   top1-err=0.939920     top5-err=0.834614
+Epoch[0] Batch [31949]     Speed: 301.006152 samples/sec   top1-err=0.939794     top5-err=0.834389
+Epoch[0] Batch [31999]     Speed: 302.095546 samples/sec   top1-err=0.939696     top5-err=0.834182
+Epoch[0] Batch [32049]     Speed: 303.789369 samples/sec   top1-err=0.939627     top5-err=0.834020
+Epoch[0] Batch [32099]     Speed: 303.549930 samples/sec   top1-err=0.939529     top5-err=0.833823
+Epoch[0] Batch [32149]     Speed: 303.068007 samples/sec   top1-err=0.939439     top5-err=0.833631
+Epoch[0] Batch [32199]     Speed: 300.814746 samples/sec   top1-err=0.939343     top5-err=0.833434
+Epoch[0] Batch [32249]     Speed: 302.833051 samples/sec   top1-err=0.939248     top5-err=0.833243
+Epoch[0] Batch [32299]     Speed: 302.821162 samples/sec   top1-err=0.939151     top5-err=0.833029
+Epoch[0] Batch [32349]     Speed: 303.524270 samples/sec   top1-err=0.939060     top5-err=0.832836
+Epoch[0] Batch [32399]     Speed: 303.388533 samples/sec   top1-err=0.938969     top5-err=0.832624
+Epoch[0] Batch [32449]     Speed: 303.549765 samples/sec   top1-err=0.938867     top5-err=0.832436
+Epoch[0] Batch [32499]     Speed: 303.285769 samples/sec   top1-err=0.938775     top5-err=0.832258
+Epoch[0] Batch [32549]     Speed: 303.828485 samples/sec   top1-err=0.938669     top5-err=0.832052
+Epoch[0] Batch [32599]     Speed: 303.569771 samples/sec   top1-err=0.938591     top5-err=0.831874
+Epoch[0] Batch [32649]     Speed: 301.698907 samples/sec   top1-err=0.938494     top5-err=0.831661
+Epoch[0] Batch [32699]     Speed: 302.627006 samples/sec   top1-err=0.938413     top5-err=0.831494
+Epoch[0] Batch [32749]     Speed: 302.988111 samples/sec   top1-err=0.938317     top5-err=0.831289
+Epoch[0] Batch [32799]     Speed: 302.523011 samples/sec   top1-err=0.938216     top5-err=0.831096
+Epoch[0] Batch [32849]     Speed: 303.614902 samples/sec   top1-err=0.938143     top5-err=0.830920
+Epoch[0] Batch [32899]     Speed: 304.616777 samples/sec   top1-err=0.938044     top5-err=0.830727
+Epoch[0] Batch [32949]     Speed: 303.648298 samples/sec   top1-err=0.937960     top5-err=0.830556
+Epoch[0] Batch [32999]     Speed: 304.406061 samples/sec   top1-err=0.937861     top5-err=0.830371
+Epoch[0] Batch [33049]     Speed: 305.018011 samples/sec   top1-err=0.937770     top5-err=0.830185
+Epoch[0] Batch [33099]     Speed: 303.550548 samples/sec   top1-err=0.937677     top5-err=0.829980
+Epoch[0] Batch [33149]     Speed: 303.917371 samples/sec   top1-err=0.937581     top5-err=0.829788
+Epoch[0] Batch [33199]     Speed: 302.986606 samples/sec   top1-err=0.937483     top5-err=0.829597
+Epoch[0] Batch [33249]     Speed: 303.237366 samples/sec   top1-err=0.937412     top5-err=0.829418
+Epoch[0] Batch [33299]     Speed: 303.405309 samples/sec   top1-err=0.937293     top5-err=0.829203
+Epoch[0] Batch [33349]     Speed: 303.723979 samples/sec   top1-err=0.937198     top5-err=0.829040
+Epoch[0] Batch [33399]     Speed: 303.852972 samples/sec   top1-err=0.937098     top5-err=0.828842
+Epoch[0] Batch [33449]     Speed: 303.887342 samples/sec   top1-err=0.936997     top5-err=0.828665
+Epoch[0] Batch [33499]     Speed: 302.893615 samples/sec   top1-err=0.936902     top5-err=0.828484
+Epoch[0] Batch [33549]     Speed: 300.759742 samples/sec   top1-err=0.936801     top5-err=0.828289
+Epoch[0] Batch [33599]     Speed: 303.180458 samples/sec   top1-err=0.936721     top5-err=0.828093
+Epoch[0] Batch [33649]     Speed: 303.573699 samples/sec   top1-err=0.936631     top5-err=0.827914
+Epoch[0] Batch [33699]     Speed: 304.702141 samples/sec   top1-err=0.936562     top5-err=0.827761
+Epoch[0] Batch [33749]     Speed: 304.137996 samples/sec   top1-err=0.936460     top5-err=0.827589
+Epoch[0] Batch [33799]     Speed: 305.524088 samples/sec   top1-err=0.936385     top5-err=0.827408
+Epoch[0] Batch [33849]     Speed: 304.727391 samples/sec   top1-err=0.936288     top5-err=0.827221
+Epoch[0] Batch [33899]     Speed: 304.574845 samples/sec   top1-err=0.936209     top5-err=0.827044
+Epoch[0] Batch [33949]     Speed: 305.276894 samples/sec   top1-err=0.936088     top5-err=0.826828
+Epoch[0] Batch [33999]     Speed: 304.632596 samples/sec   top1-err=0.936001     top5-err=0.826632
+Epoch[0] Batch [34049]     Speed: 304.283841 samples/sec   top1-err=0.935887     top5-err=0.826423
+Epoch[0] Batch [34099]     Speed: 304.172556 samples/sec   top1-err=0.935795     top5-err=0.826252
+Epoch[0] Batch [34149]     Speed: 304.317219 samples/sec   top1-err=0.935723     top5-err=0.826043
+Epoch[0] Batch [34199]     Speed: 303.654948 samples/sec   top1-err=0.935643     top5-err=0.825874
+Epoch[0] Batch [34249]     Speed: 303.709849 samples/sec   top1-err=0.935540     top5-err=0.825675
+Epoch[0] Batch [34299]     Speed: 303.427999 samples/sec   top1-err=0.935445     top5-err=0.825470
+Epoch[0] Batch [34349]     Speed: 304.081618 samples/sec   top1-err=0.935323     top5-err=0.825287
+Epoch[0] Batch [34399]     Speed: 303.596029 samples/sec   top1-err=0.935234     top5-err=0.825104
+Epoch[0] Batch [34449]     Speed: 304.859468 samples/sec   top1-err=0.935137     top5-err=0.824937
+Epoch[0] Batch [34499]     Speed: 304.193665 samples/sec   top1-err=0.935038     top5-err=0.824745
+Epoch[0] Batch [34549]     Speed: 304.285359 samples/sec   top1-err=0.934945     top5-err=0.824557
+Epoch[0] Batch [34599]     Speed: 303.929016 samples/sec   top1-err=0.934881     top5-err=0.824403
+Epoch[0] Batch [34649]     Speed: 304.883581 samples/sec   top1-err=0.934786     top5-err=0.824210
+Epoch[0] Batch [34699]     Speed: 304.289539 samples/sec   top1-err=0.934704     top5-err=0.824029
+Epoch[0] Batch [34749]     Speed: 303.096369 samples/sec   top1-err=0.934608     top5-err=0.823824
+Epoch[0] Batch [34799]     Speed: 304.059492 samples/sec   top1-err=0.934525     top5-err=0.823649
+Epoch[0] Batch [34849]     Speed: 303.518600 samples/sec   top1-err=0.934435     top5-err=0.823430
+Epoch[0] Batch [34899]     Speed: 303.853398 samples/sec   top1-err=0.934352     top5-err=0.823254
+Epoch[0] Batch [34949]     Speed: 303.284535 samples/sec   top1-err=0.934237     top5-err=0.823067
+Epoch[0] Batch [34999]     Speed: 302.198975 samples/sec   top1-err=0.934157     top5-err=0.822871
+Epoch[0] Batch [35049]     Speed: 303.604957 samples/sec   top1-err=0.934050     top5-err=0.822667
+Epoch[0] Batch [35099]     Speed: 303.615328 samples/sec   top1-err=0.933979     top5-err=0.822492
+Epoch[0] Batch [35149]     Speed: 304.267120 samples/sec   top1-err=0.933895     top5-err=0.822329
+Epoch[0] Batch [35199]     Speed: 302.754331 samples/sec   top1-err=0.933814     top5-err=0.822167
+Epoch[0] Batch [35249]     Speed: 303.182869 samples/sec   top1-err=0.933724     top5-err=0.822001
+Epoch[0] Batch [35299]     Speed: 303.658410 samples/sec   top1-err=0.933632     top5-err=0.821822
+Epoch[0] Batch [35349]     Speed: 300.760591 samples/sec   top1-err=0.933550     top5-err=0.821667
+Epoch[0] Batch [35399]     Speed: 302.645253 samples/sec   top1-err=0.933474     top5-err=0.821486
+Epoch[0] Batch [35449]     Speed: 303.357635 samples/sec   top1-err=0.933377     top5-err=0.821293
+Epoch[0] Batch [35499]     Speed: 303.630479 samples/sec   top1-err=0.933304     top5-err=0.821104
+Epoch[0] Batch [35549]     Speed: 303.807949 samples/sec   top1-err=0.933236     top5-err=0.820939
+Epoch[0] Batch [35599]     Speed: 303.390687 samples/sec   top1-err=0.933159     top5-err=0.820761
+Epoch[0] Batch [35649]     Speed: 303.220924 samples/sec   top1-err=0.933092     top5-err=0.820581
+Epoch[0] Batch [35699]     Speed: 304.096830 samples/sec   top1-err=0.932996     top5-err=0.820381
+Epoch[0] Batch [35749]     Speed: 304.136260 samples/sec   top1-err=0.932928     top5-err=0.820201
+Epoch[0] Batch [35799]     Speed: 303.669472 samples/sec   top1-err=0.932816     top5-err=0.820020
+Epoch[0] Batch [35849]     Speed: 303.703691 samples/sec   top1-err=0.932717     top5-err=0.819846
+Epoch[0] Batch [35899]     Speed: 303.510447 samples/sec   top1-err=0.932645     top5-err=0.819680
+Epoch[0] Batch [35949]     Speed: 303.653698 samples/sec   top1-err=0.932552     top5-err=0.819498
+Epoch[0] Batch [35999]     Speed: 303.317009 samples/sec   top1-err=0.932466     top5-err=0.819321
+Epoch[0] Batch [36049]     Speed: 304.544092 samples/sec   top1-err=0.932393     top5-err=0.819178
+Epoch[0] Batch [36099]     Speed: 303.929222 samples/sec   top1-err=0.932311     top5-err=0.818966
+Epoch[0] Batch [36149]     Speed: 303.735581 samples/sec   top1-err=0.932221     top5-err=0.818783
+Epoch[0] Batch [36199]     Speed: 304.217604 samples/sec   top1-err=0.932139     top5-err=0.818612
+Epoch[0] Batch [36249]     Speed: 302.899343 samples/sec   top1-err=0.932045     top5-err=0.818419
+Epoch[0] Batch [36299]     Speed: 300.777899 samples/sec   top1-err=0.931995     top5-err=0.818282
+Epoch[0] Batch [36349]     Speed: 301.346116 samples/sec   top1-err=0.931915     top5-err=0.818115
+Epoch[0] Batch [36399]     Speed: 301.439663 samples/sec   top1-err=0.931817     top5-err=0.817952
+Epoch[0] Batch [36449]     Speed: 301.896533 samples/sec   top1-err=0.931732     top5-err=0.817788
+Epoch[0] Batch [36499]     Speed: 300.867073 samples/sec   top1-err=0.931649     top5-err=0.817584
+Epoch[0] Batch [36549]     Speed: 301.468560 samples/sec   top1-err=0.931561     top5-err=0.817411
+Epoch[0] Batch [36599]     Speed: 301.354141 samples/sec   top1-err=0.931464     top5-err=0.817210
+Epoch[0] Batch [36649]     Speed: 301.075131 samples/sec   top1-err=0.931387     top5-err=0.817060
+Epoch[0] Batch [36699]     Speed: 301.224894 samples/sec   top1-err=0.931316     top5-err=0.816915
+Epoch[0] Batch [36749]     Speed: 300.474338 samples/sec   top1-err=0.931224     top5-err=0.816741
+Epoch[0] Batch [36799]     Speed: 300.527986 samples/sec   top1-err=0.931144     top5-err=0.816568
+Epoch[0] Batch [36849]     Speed: 301.340947 samples/sec   top1-err=0.931056     top5-err=0.816387
+Epoch[0] Batch [36899]     Speed: 301.237929 samples/sec   top1-err=0.930960     top5-err=0.816215
+Epoch[0] Batch [36949]     Speed: 301.430726 samples/sec   top1-err=0.930900     top5-err=0.816053
+Epoch[0] Batch [36999]     Speed: 301.070444 samples/sec   top1-err=0.930818     top5-err=0.815892
+Epoch[0] Batch [37049]     Speed: 301.633708 samples/sec   top1-err=0.930741     top5-err=0.815745
+Epoch[0] Batch [37099]     Speed: 301.052778 samples/sec   top1-err=0.930665     top5-err=0.815594
+Epoch[0] Batch [37149]     Speed: 300.508540 samples/sec   top1-err=0.930577     top5-err=0.815426
+Epoch[0] Batch [37199]     Speed: 301.125455 samples/sec   top1-err=0.930501     top5-err=0.815267
+Epoch[0] Batch [37249]     Speed: 300.235190 samples/sec   top1-err=0.930422     top5-err=0.815097
+Epoch[0] Batch [37299]     Speed: 300.388502 samples/sec   top1-err=0.930355     top5-err=0.814922
+Epoch[0] Batch [37349]     Speed: 300.640822 samples/sec   top1-err=0.930234     top5-err=0.814730
+Epoch[0] Batch [37399]     Speed: 301.081142 samples/sec   top1-err=0.930148     top5-err=0.814551
+Epoch[0] Batch [37449]     Speed: 304.333573 samples/sec   top1-err=0.930052     top5-err=0.814363
+Epoch[0] Batch [37499]     Speed: 304.268183 samples/sec   top1-err=0.929949     top5-err=0.814194
+Epoch[0] Batch [37549]     Speed: 303.959976 samples/sec   top1-err=0.929874     top5-err=0.814055
+Epoch[0] Batch [37599]     Speed: 304.673810 samples/sec   top1-err=0.929802     top5-err=0.813892
+Epoch[0] Batch [37649]     Speed: 302.998754 samples/sec   top1-err=0.929696     top5-err=0.813700
+Epoch[0] Batch [37699]     Speed: 303.097970 samples/sec   top1-err=0.929601     top5-err=0.813526
+Epoch[0] Batch [37749]     Speed: 303.260606 samples/sec   top1-err=0.929512     top5-err=0.813333
+Epoch[0] Batch [37799]     Speed: 304.099724 samples/sec   top1-err=0.929428     top5-err=0.813185
+Epoch[0] Batch [37849]     Speed: 303.575910 samples/sec   top1-err=0.929330     top5-err=0.813005
+Epoch[0] Batch [37899]     Speed: 303.907256 samples/sec   top1-err=0.929236     top5-err=0.812826
+Epoch[0] Batch [37949]     Speed: 302.880177 samples/sec   top1-err=0.929168     top5-err=0.812656
+Epoch[0] Batch [37999]     Speed: 304.355505 samples/sec   top1-err=0.929072     top5-err=0.812488
+Epoch[0] Batch [38049]     Speed: 303.949650 samples/sec   top1-err=0.928983     top5-err=0.812315
+Epoch[0] Batch [38099]     Speed: 304.009450 samples/sec   top1-err=0.928893     top5-err=0.812146
+Epoch[0] Batch [38149]     Speed: 304.478017 samples/sec   top1-err=0.928820     top5-err=0.811990
+Epoch[0] Batch [38199]     Speed: 304.495355 samples/sec   top1-err=0.928737     top5-err=0.811821
+Epoch[0] Batch [38249]     Speed: 303.958792 samples/sec   top1-err=0.928657     top5-err=0.811682
+Epoch[0] Batch [38299]     Speed: 304.231188 samples/sec   top1-err=0.928568     top5-err=0.811514
+Epoch[0] Batch [38349]     Speed: 305.278491 samples/sec   top1-err=0.928474     top5-err=0.811347
+Epoch[0] Batch [38399]     Speed: 303.805996 samples/sec   top1-err=0.928393     top5-err=0.811182
+Epoch[0] Batch [38449]     Speed: 304.243394 samples/sec   top1-err=0.928317     top5-err=0.811014
+Epoch[0] Batch [38499]     Speed: 304.801341 samples/sec   top1-err=0.928226     top5-err=0.810830
+Epoch[0] Batch [38549]     Speed: 303.915472 samples/sec   top1-err=0.928149     top5-err=0.810678
+Epoch[0] Batch [38599]     Speed: 304.209302 samples/sec   top1-err=0.928047     top5-err=0.810462
+Epoch[0] Batch [38649]     Speed: 304.577637 samples/sec   top1-err=0.927974     top5-err=0.810310
+Epoch[0] Batch [38699]     Speed: 304.206999 samples/sec   top1-err=0.927901     top5-err=0.810148
+Epoch[0] Batch [38749]     Speed: 304.432174 samples/sec   top1-err=0.927848     top5-err=0.809980
+Epoch[0] Batch [38799]     Speed: 304.920970 samples/sec   top1-err=0.927787     top5-err=0.809833
+Epoch[0] Batch [38849]     Speed: 304.146198 samples/sec   top1-err=0.927702     top5-err=0.809662
+Epoch[0] Batch [38899]     Speed: 304.483778 samples/sec   top1-err=0.927627     top5-err=0.809496
+Epoch[0] Batch [38949]     Speed: 305.081061 samples/sec   top1-err=0.927562     top5-err=0.809325
+Epoch[0] Batch [38999]     Speed: 304.754791 samples/sec   top1-err=0.927481     top5-err=0.809147
+Epoch[0] Batch [39049]     Speed: 304.691599 samples/sec   top1-err=0.927408     top5-err=0.808966
+Epoch[0] Batch [39099]     Speed: 304.543262 samples/sec   top1-err=0.927324     top5-err=0.808804
+Epoch[0] Batch [39149]     Speed: 305.183339 samples/sec   top1-err=0.927243     top5-err=0.808646
+Epoch[0] Batch [39199]     Speed: 305.575117 samples/sec   top1-err=0.927159     top5-err=0.808483
+Epoch[0] Batch [39249]     Speed: 305.112270 samples/sec   top1-err=0.927074     top5-err=0.808311
+Epoch[0] Batch [39299]     Speed: 304.569026 samples/sec   top1-err=0.926998     top5-err=0.808127
+Epoch[0] Batch [39349]     Speed: 305.151949 samples/sec   top1-err=0.926898     top5-err=0.807944
+Epoch[0] Batch [39399]     Speed: 304.724070 samples/sec   top1-err=0.926846     top5-err=0.807807
+Epoch[0] Batch [39449]     Speed: 304.514035 samples/sec   top1-err=0.926756     top5-err=0.807655
+Epoch[0] Batch [39499]     Speed: 305.235586 samples/sec   top1-err=0.926700     top5-err=0.807487
+Epoch[0] Batch [39549]     Speed: 304.292285 samples/sec   top1-err=0.926626     top5-err=0.807304
+Epoch[0] Batch [39599]     Speed: 302.881790 samples/sec   top1-err=0.926540     top5-err=0.807150
+Epoch[0] Batch [39649]     Speed: 304.776521 samples/sec   top1-err=0.926467     top5-err=0.806972
+Epoch[0] Batch [39699]     Speed: 304.778265 samples/sec   top1-err=0.926367     top5-err=0.806785
+Epoch[0] Batch [39749]     Speed: 304.286545 samples/sec   top1-err=0.926303     top5-err=0.806634
+Epoch[0] Batch [39799]     Speed: 303.407435 samples/sec   top1-err=0.926233     top5-err=0.806489
+Epoch[0] Batch [39849]     Speed: 304.724195 samples/sec   top1-err=0.926152     top5-err=0.806339
+Epoch[0] Batch [39899]     Speed: 303.804236 samples/sec   top1-err=0.926082     top5-err=0.806183
+Epoch[0] Batch [39949]     Speed: 302.927824 samples/sec   top1-err=0.925984     top5-err=0.806004
+Epoch[0] Batch [39999]     Speed: 304.745754 samples/sec   top1-err=0.925895     top5-err=0.805838
+[Epoch 0] training: err-top1=0.925855 err-top5=0.805741
+[Epoch 0] time cost: 4296.447870
+[Epoch 0] validation: err-top1=0.848169 err-top5=0.645393
+[Epoch 1] training: err-top1=nan err-top5=nan
+[Epoch 1] time cost: 0.000784
+[Epoch 1] validation: err-top1=nan err-top5=nan
+[Epoch 2] training: err-top1=nan err-top5=nan
+[Epoch 2] time cost: 0.000035
+[Epoch 2] validation: err-top1=nan err-top5=nan
+[Epoch 3] training: err-top1=nan err-top5=nan
+[Epoch 3] time cost: 0.000031
+[Epoch 3] validation: err-top1=nan err-top5=nan
+[Epoch 4] training: err-top1=nan err-top5=nan
+[Epoch 4] time cost: 0.000030
+[Epoch 4] validation: err-top1=nan err-top5=nan
+[Epoch 5] training: err-top1=nan err-top5=nan
+[Epoch 5] time cost: 0.000029
+[Epoch 5] validation: err-top1=nan err-top5=nan
+[Epoch 6] training: err-top1=nan err-top5=nan
+[Epoch 6] time cost: 0.000028
+[Epoch 6] validation: err-top1=nan err-top5=nan
+[Epoch 7] training: err-top1=nan err-top5=nan
+[Epoch 7] time cost: 0.000028
+[Epoch 7] validation: err-top1=nan err-top5=nan
+[Epoch 8] training: err-top1=nan err-top5=nan
+[Epoch 8] time cost: 0.000029
+[Epoch 8] validation: err-top1=nan err-top5=nan
+[Epoch 9] training: err-top1=nan err-top5=nan
+[Epoch 9] time cost: 0.000028
+[Epoch 9] validation: err-top1=nan err-top5=nan
+[Epoch 10] training: err-top1=nan err-top5=nan
+[Epoch 10] time cost: 0.000028
+[Epoch 10] validation: err-top1=nan err-top5=nan
+[Epoch 11] training: err-top1=nan err-top5=nan
+[Epoch 11] time cost: 0.000027
+[Epoch 11] validation: err-top1=nan err-top5=nan
+[Epoch 12] training: err-top1=nan err-top5=nan
+[Epoch 12] time cost: 0.000028
+[Epoch 12] validation: err-top1=nan err-top5=nan
+[Epoch 13] training: err-top1=nan err-top5=nan
+[Epoch 13] time cost: 0.000027
+[Epoch 13] validation: err-top1=nan err-top5=nan
+[Epoch 14] training: err-top1=nan err-top5=nan
+[Epoch 14] time cost: 0.000028
+[Epoch 14] validation: err-top1=nan err-top5=nan
+[Epoch 15] training: err-top1=nan err-top5=nan
+[Epoch 15] time cost: 0.000028
+[Epoch 15] validation: err-top1=nan err-top5=nan
+[Epoch 16] training: err-top1=nan err-top5=nan
+[Epoch 16] time cost: 0.000029
+[Epoch 16] validation: err-top1=nan err-top5=nan
+[Epoch 17] training: err-top1=nan err-top5=nan
+[Epoch 17] time cost: 0.000028
+[Epoch 17] validation: err-top1=nan err-top5=nan
+[Epoch 18] training: err-top1=nan err-top5=nan
+[Epoch 18] time cost: 0.000028
+[Epoch 18] validation: err-top1=nan err-top5=nan
+[Epoch 19] training: err-top1=nan err-top5=nan
+[Epoch 19] time cost: 0.000028
+[Epoch 19] validation: err-top1=nan err-top5=nan
+[Epoch 20] training: err-top1=nan err-top5=nan
+[Epoch 20] time cost: 0.000028
+[Epoch 20] validation: err-top1=nan err-top5=nan
+[Epoch 21] training: err-top1=nan err-top5=nan
+[Epoch 21] time cost: 0.000027
+[Epoch 21] validation: err-top1=nan err-top5=nan
+[Epoch 22] training: err-top1=nan err-top5=nan
+[Epoch 22] time cost: 0.000027
+[Epoch 22] validation: err-top1=nan err-top5=nan
+[Epoch 23] training: err-top1=nan err-top5=nan
+[Epoch 23] time cost: 0.000028
+[Epoch 23] validation: err-top1=nan err-top5=nan
+[Epoch 24] training: err-top1=nan err-top5=nan
+[Epoch 24] time cost: 0.000027
+[Epoch 24] validation: err-top1=nan err-top5=nan
+[Epoch 25] training: err-top1=nan err-top5=nan
+[Epoch 25] time cost: 0.000030
+[Epoch 25] validation: err-top1=nan err-top5=nan
+[Epoch 26] training: err-top1=nan err-top5=nan
+[Epoch 26] time cost: 0.000028
+[Epoch 26] validation: err-top1=nan err-top5=nan
+[Epoch 27] training: err-top1=nan err-top5=nan
+[Epoch 27] time cost: 0.000027
+[Epoch 27] validation: err-top1=nan err-top5=nan
+[Epoch 28] training: err-top1=nan err-top5=nan
+[Epoch 28] time cost: 0.000027
+[Epoch 28] validation: err-top1=nan err-top5=nan
+[Epoch 29] training: err-top1=nan err-top5=nan
+[Epoch 29] time cost: 0.000027
+[Epoch 29] validation: err-top1=nan err-top5=nan
+[Epoch 30] training: err-top1=nan err-top5=nan
+[Epoch 30] time cost: 0.000045
+[Epoch 30] validation: err-top1=nan err-top5=nan
+[Epoch 31] training: err-top1=nan err-top5=nan
+[Epoch 31] time cost: 0.000027
+[Epoch 31] validation: err-top1=nan err-top5=nan
+[Epoch 32] training: err-top1=nan err-top5=nan
+[Epoch 32] time cost: 0.000027
+[Epoch 32] validation: err-top1=nan err-top5=nan
+[Epoch 33] training: err-top1=nan err-top5=nan
+[Epoch 33] time cost: 0.000027
+[Epoch 33] validation: err-top1=nan err-top5=nan
+[Epoch 34] training: err-top1=nan err-top5=nan
+[Epoch 34] time cost: 0.000027
+[Epoch 34] validation: err-top1=nan err-top5=nan
+[Epoch 35] training: err-top1=nan err-top5=nan
+[Epoch 35] time cost: 0.000028
+[Epoch 35] validation: err-top1=nan err-top5=nan
+[Epoch 36] training: err-top1=nan err-top5=nan
+[Epoch 36] time cost: 0.000027
+[Epoch 36] validation: err-top1=nan err-top5=nan
+[Epoch 37] training: err-top1=nan err-top5=nan
+[Epoch 37] time cost: 0.000026
+[Epoch 37] validation: err-top1=nan err-top5=nan
+[Epoch 38] training: err-top1=nan err-top5=nan
+[Epoch 38] time cost: 0.000026
+[Epoch 38] validation: err-top1=nan err-top5=nan
+[Epoch 39] training: err-top1=nan err-top5=nan
+[Epoch 39] time cost: 0.000027
+[Epoch 39] validation: err-top1=nan err-top5=nan
+[Epoch 40] training: err-top1=nan err-top5=nan
+[Epoch 40] time cost: 0.000026
+[Epoch 40] validation: err-top1=nan err-top5=nan
+[Epoch 41] training: err-top1=nan err-top5=nan
+[Epoch 41] time cost: 0.000026
+[Epoch 41] validation: err-top1=nan err-top5=nan
+[Epoch 42] training: err-top1=nan err-top5=nan
+[Epoch 42] time cost: 0.000027
+[Epoch 42] validation: err-top1=nan err-top5=nan
+[Epoch 43] training: err-top1=nan err-top5=nan
+[Epoch 43] time cost: 0.000026
+[Epoch 43] validation: err-top1=nan err-top5=nan
+[Epoch 44] training: err-top1=nan err-top5=nan
+[Epoch 44] time cost: 0.000027
+[Epoch 44] validation: err-top1=nan err-top5=nan
+[Epoch 45] training: err-top1=nan err-top5=nan
+[Epoch 45] time cost: 0.000026
+[Epoch 45] validation: err-top1=nan err-top5=nan
+[Epoch 46] training: err-top1=nan err-top5=nan
+[Epoch 46] time cost: 0.000028
+[Epoch 46] validation: err-top1=nan err-top5=nan
+[Epoch 47] training: err-top1=nan err-top5=nan
+[Epoch 47] time cost: 0.000027
+[Epoch 47] validation: err-top1=nan err-top5=nan
+[Epoch 48] training: err-top1=nan err-top5=nan
+[Epoch 48] time cost: 0.000027
+[Epoch 48] validation: err-top1=nan err-top5=nan
+[Epoch 49] training: err-top1=nan err-top5=nan
+[Epoch 49] time cost: 0.000026
+[Epoch 49] validation: err-top1=nan err-top5=nan
+[Epoch 50] training: err-top1=nan err-top5=nan
+[Epoch 50] time cost: 0.000027
+[Epoch 50] validation: err-top1=nan err-top5=nan
+[Epoch 51] training: err-top1=nan err-top5=nan
+[Epoch 51] time cost: 0.000027
+[Epoch 51] validation: err-top1=nan err-top5=nan
+[Epoch 52] training: err-top1=nan err-top5=nan
+[Epoch 52] time cost: 0.000027
+[Epoch 52] validation: err-top1=nan err-top5=nan
+[Epoch 53] training: err-top1=nan err-top5=nan
+[Epoch 53] time cost: 0.000027
+[Epoch 53] validation: err-top1=nan err-top5=nan
+[Epoch 54] training: err-top1=nan err-top5=nan
+[Epoch 54] time cost: 0.000026
+[Epoch 54] validation: err-top1=nan err-top5=nan
+[Epoch 55] training: err-top1=nan err-top5=nan
+[Epoch 55] time cost: 0.000028
+[Epoch 55] validation: err-top1=nan err-top5=nan
+[Epoch 56] training: err-top1=nan err-top5=nan
+[Epoch 56] time cost: 0.000027
+[Epoch 56] validation: err-top1=nan err-top5=nan
+[Epoch 57] training: err-top1=nan err-top5=nan
+[Epoch 57] time cost: 0.000027
+[Epoch 57] validation: err-top1=nan err-top5=nan
+[Epoch 58] training: err-top1=nan err-top5=nan
+[Epoch 58] time cost: 0.000029
+[Epoch 58] validation: err-top1=nan err-top5=nan
+[Epoch 59] training: err-top1=nan err-top5=nan
+[Epoch 59] time cost: 0.000027
+[Epoch 59] validation: err-top1=nan err-top5=nan
+[Epoch 60] training: err-top1=nan err-top5=nan
+[Epoch 60] time cost: 0.000026
+[Epoch 60] validation: err-top1=nan err-top5=nan
+[Epoch 61] training: err-top1=nan err-top5=nan
+[Epoch 61] time cost: 0.000026
+[Epoch 61] validation: err-top1=nan err-top5=nan
+[Epoch 62] training: err-top1=nan err-top5=nan
+[Epoch 62] time cost: 0.000027
+[Epoch 62] validation: err-top1=nan err-top5=nan
+[Epoch 63] training: err-top1=nan err-top5=nan
+[Epoch 63] time cost: 0.000026
+[Epoch 63] validation: err-top1=nan err-top5=nan
+[Epoch 64] training: err-top1=nan err-top5=nan
+[Epoch 64] time cost: 0.000026
+[Epoch 64] validation: err-top1=nan err-top5=nan
+[Epoch 65] training: err-top1=nan err-top5=nan
+[Epoch 65] time cost: 0.000026
+[Epoch 65] validation: err-top1=nan err-top5=nan
+[Epoch 66] training: err-top1=nan err-top5=nan
+[Epoch 66] time cost: 0.000027
+[Epoch 66] validation: err-top1=nan err-top5=nan
+[Epoch 67] training: err-top1=nan err-top5=nan
+[Epoch 67] time cost: 0.000027
+[Epoch 67] validation: err-top1=nan err-top5=nan
+[Epoch 68] training: err-top1=nan err-top5=nan
+[Epoch 68] time cost: 0.000026
+[Epoch 68] validation: err-top1=nan err-top5=nan
+[Epoch 69] training: err-top1=nan err-top5=nan
+[Epoch 69] time cost: 0.000027
+[Epoch 69] validation: err-top1=nan err-top5=nan
+[Epoch 70] training: err-top1=nan err-top5=nan
+[Epoch 70] time cost: 0.000027
+[Epoch 70] validation: err-top1=nan err-top5=nan
+[Epoch 71] training: err-top1=nan err-top5=nan
+[Epoch 71] time cost: 0.000027
+[Epoch 71] validation: err-top1=nan err-top5=nan
+[Epoch 72] training: err-top1=nan err-top5=nan
+[Epoch 72] time cost: 0.000031
+[Epoch 72] validation: err-top1=nan err-top5=nan
+[Epoch 73] training: err-top1=nan err-top5=nan
+[Epoch 73] time cost: 0.000028
+[Epoch 73] validation: err-top1=nan err-top5=nan
+[Epoch 74] training: err-top1=nan err-top5=nan
+[Epoch 74] time cost: 0.000032
+[Epoch 74] validation: err-top1=nan err-top5=nan
+[Epoch 75] training: err-top1=nan err-top5=nan
+[Epoch 75] time cost: 0.000027
+[Epoch 75] validation: err-top1=nan err-top5=nan
+[Epoch 76] training: err-top1=nan err-top5=nan
+[Epoch 76] time cost: 0.000027
+[Epoch 76] validation: err-top1=nan err-top5=nan
+[Epoch 77] training: err-top1=nan err-top5=nan
+[Epoch 77] time cost: 0.000027
+[Epoch 77] validation: err-top1=nan err-top5=nan
+[Epoch 78] training: err-top1=nan err-top5=nan
+[Epoch 78] time cost: 0.000027
+[Epoch 78] validation: err-top1=nan err-top5=nan
+[Epoch 79] training: err-top1=nan err-top5=nan
+[Epoch 79] time cost: 0.000027
+[Epoch 79] validation: err-top1=nan err-top5=nan
+[Epoch 80] training: err-top1=nan err-top5=nan
+[Epoch 80] time cost: 0.000026
+[Epoch 80] validation: err-top1=nan err-top5=nan
+[Epoch 81] training: err-top1=nan err-top5=nan
+[Epoch 81] time cost: 0.000026
+[Epoch 81] validation: err-top1=nan err-top5=nan
+[Epoch 82] training: err-top1=nan err-top5=nan
+[Epoch 82] time cost: 0.000027
+[Epoch 82] validation: err-top1=nan err-top5=nan
+[Epoch 83] training: err-top1=nan err-top5=nan
+[Epoch 83] time cost: 0.000027
+[Epoch 83] validation: err-top1=nan err-top5=nan
+[Epoch 84] training: err-top1=nan err-top5=nan
+[Epoch 84] time cost: 0.000027
+[Epoch 84] validation: err-top1=nan err-top5=nan
+[Epoch 85] training: err-top1=nan err-top5=nan
+[Epoch 85] time cost: 0.000027
+[Epoch 85] validation: err-top1=nan err-top5=nan
+[Epoch 86] training: err-top1=nan err-top5=nan
+[Epoch 86] time cost: 0.000027
+[Epoch 86] validation: err-top1=nan err-top5=nan
+[Epoch 87] training: err-top1=nan err-top5=nan
+[Epoch 87] time cost: 0.000032
+[Epoch 87] validation: err-top1=nan err-top5=nan
+[Epoch 88] training: err-top1=nan err-top5=nan
+[Epoch 88] time cost: 0.000031
+[Epoch 88] validation: err-top1=nan err-top5=nan
+[Epoch 89] training: err-top1=nan err-top5=nan
+[Epoch 89] time cost: 0.000028
+[Epoch 89] validation: err-top1=nan err-top5=nan
+[Epoch 90] training: err-top1=nan err-top5=nan
+[Epoch 90] time cost: 0.000027
+[Epoch 90] validation: err-top1=nan err-top5=nan
+[Epoch 91] training: err-top1=nan err-top5=nan
+[Epoch 91] time cost: 0.000027
+[Epoch 91] validation: err-top1=nan err-top5=nan
+[Epoch 92] training: err-top1=nan err-top5=nan
+[Epoch 92] time cost: 0.000027
+[Epoch 92] validation: err-top1=nan err-top5=nan
+[Epoch 93] training: err-top1=nan err-top5=nan
+[Epoch 93] time cost: 0.000029
+[Epoch 93] validation: err-top1=nan err-top5=nan
+[Epoch 94] training: err-top1=nan err-top5=nan
+[Epoch 94] time cost: 0.000027
+[Epoch 94] validation: err-top1=nan err-top5=nan
+[Epoch 95] training: err-top1=nan err-top5=nan
+[Epoch 95] time cost: 0.000027
+[Epoch 95] validation: err-top1=nan err-top5=nan
+[Epoch 96] training: err-top1=nan err-top5=nan
+[Epoch 96] time cost: 0.000027
+[Epoch 96] validation: err-top1=nan err-top5=nan
+[Epoch 97] training: err-top1=nan err-top5=nan
+[Epoch 97] time cost: 0.000027
+[Epoch 97] validation: err-top1=nan err-top5=nan
+[Epoch 98] training: err-top1=nan err-top5=nan
+[Epoch 98] time cost: 0.000027
+[Epoch 98] validation: err-top1=nan err-top5=nan
+[Epoch 99] training: err-top1=nan err-top5=nan
+[Epoch 99] time cost: 0.000026
+[Epoch 99] validation: err-top1=nan err-top5=nan
+[Epoch 100] training: err-top1=nan err-top5=nan
+[Epoch 100] time cost: 0.000027
+[Epoch 100] validation: err-top1=nan err-top5=nan
+[Epoch 101] training: err-top1=nan err-top5=nan
+[Epoch 101] time cost: 0.000027
+[Epoch 101] validation: err-top1=nan err-top5=nan
+[Epoch 102] training: err-top1=nan err-top5=nan
+[Epoch 102] time cost: 0.000027
+[Epoch 102] validation: err-top1=nan err-top5=nan
+[Epoch 103] training: err-top1=nan err-top5=nan
+[Epoch 103] time cost: 0.000027
+[Epoch 103] validation: err-top1=nan err-top5=nan
+[Epoch 104] training: err-top1=nan err-top5=nan
+[Epoch 104] time cost: 0.000027
+[Epoch 104] validation: err-top1=nan err-top5=nan
+[Epoch 105] training: err-top1=nan err-top5=nan
+[Epoch 105] time cost: 0.000027
+[Epoch 105] validation: err-top1=nan err-top5=nan
+[Epoch 106] training: err-top1=nan err-top5=nan
+[Epoch 106] time cost: 0.000032
+[Epoch 106] validation: err-top1=nan err-top5=nan
+[Epoch 107] training: err-top1=nan err-top5=nan
+[Epoch 107] time cost: 0.000027
+[Epoch 107] validation: err-top1=nan err-top5=nan
+[Epoch 108] training: err-top1=nan err-top5=nan
+[Epoch 108] time cost: 0.000027
+[Epoch 108] validation: err-top1=nan err-top5=nan
+[Epoch 109] training: err-top1=nan err-top5=nan
+[Epoch 109] time cost: 0.000027
+[Epoch 109] validation: err-top1=nan err-top5=nan
+[Epoch 110] training: err-top1=nan err-top5=nan
+[Epoch 110] time cost: 0.000027
+[Epoch 110] validation: err-top1=nan err-top5=nan
+[Epoch 111] training: err-top1=nan err-top5=nan
+[Epoch 111] time cost: 0.000027
+[Epoch 111] validation: err-top1=nan err-top5=nan
+[Epoch 112] training: err-top1=nan err-top5=nan
+[Epoch 112] time cost: 0.000027
+[Epoch 112] validation: err-top1=nan err-top5=nan
+[Epoch 113] training: err-top1=nan err-top5=nan
+[Epoch 113] time cost: 0.000026
+[Epoch 113] validation: err-top1=nan err-top5=nan
+[Epoch 114] training: err-top1=nan err-top5=nan
+[Epoch 114] time cost: 0.000027
+[Epoch 114] validation: err-top1=nan err-top5=nan
+[Epoch 115] training: err-top1=nan err-top5=nan
+[Epoch 115] time cost: 0.000026
+[Epoch 115] validation: err-top1=nan err-top5=nan
+[Epoch 116] training: err-top1=nan err-top5=nan
+[Epoch 116] time cost: 0.000027
+[Epoch 116] validation: err-top1=nan err-top5=nan
+[Epoch 117] training: err-top1=nan err-top5=nan
+[Epoch 117] time cost: 0.000027
+[Epoch 117] validation: err-top1=nan err-top5=nan
+[Epoch 118] training: err-top1=nan err-top5=nan
+[Epoch 118] time cost: 0.000027
+[Epoch 118] validation: err-top1=nan err-top5=nan
+[Epoch 119] training: err-top1=nan err-top5=nan
+[Epoch 119] time cost: 0.000031
+[Epoch 119] validation: err-top1=nan err-top5=nan
+Training Phase Done.
