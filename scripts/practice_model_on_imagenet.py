@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import argparse, time
@@ -16,22 +16,17 @@ from mxnet.io import ImageRecordIter
 
 from gluoncv.model_zoo import get_model
 from gluoncv.utils import makedirs, TrainingHistory
+mx.random.seed(1)
 print("Imports Successful.")
-
-
-# In[ ]:
-
 
 num_gpus = 1
 ctx = [mx.gpu(i) for i in range(num_gpus)]
 
-# Get the model ResNet50_v2 with 10 output classes
+# Get the model ResNet50_v2 with 1000 output classes
 net = get_model('ResNet50_v2', classes=1000)
-net.initialize(mx.init.MSRAPrelu(), ctx=ctx)
+#net.initialize(mx.init.MSRAPrelu(), ctx=ctx)
+net.initialize(mx.init.Xavier(), ctx=ctx)
 print("Net Init Complete.")
-
-
-# In[ ]:
 
 
 jitter_param = 0.4
@@ -86,40 +81,24 @@ print("RecordIter Setup Done.")
 
 # ## Optimizer, Loss, and Metric
 
-# In[ ]:
+# In[1]:
 
 
-lr_decay = 0.1
+#lr_decay = 0.1
+lr_decay = 0.01
 lr_decay_epoch = [30, 60, 90, np.inf]
 optimizer = 'nag'
-optimizer_params = {'learning_rate': 0.1, 'wd':0.0001, 'momentum':0.9}
+optimizer_params = {'learning_rate': 0.01, 'wd':0.0001, 'momentum':0.9}
 trainer = gluon.Trainer(net.collect_params(), optimizer, optimizer_params)
-
-
-# In[ ]:
-
 
 loss_fn = gluon.loss.SoftmaxCrossEntropyLoss()
 
-
 # With 1000 classes the model may not always rate the correct answer with the highest rank. Besides top-1 accuracy, we want top-5 accuracy for how well the model is doing. At the end of every epoch, we reocrd and print the metric scores.
-
-# In[ ]:
-
 
 acc_top1 = mx.metric.Accuracy()
 acc_top5 = mx.metric.TopKAccuracy(5)
 train_history = TrainingHistory(['training-top1-err', 'training-top5-err',
                                  'validation-top1-err', 'validation-top5-err'])
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 def test(ctx, val_data):
@@ -137,16 +116,6 @@ def test(ctx, val_data):
     return (1 - top1, 1 - top5)
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-#epochs = 120
 epochs = 120
 lr_decay_count = 0
 log_interval = 50
@@ -157,6 +126,7 @@ for epoch in range(epochs):
     btic = time.time()
     acc_top1.reset()
     acc_top5.reset()
+    train_loss = 0
 
     if lr_decay_count == 0 and epoch == lr_decay_epoch[lr_decay_count]:
         trainer.set_learning_rate(trainer.learning_rate*lr_decay)
@@ -165,20 +135,33 @@ for epoch in range(epochs):
     for i, batch in enumerate(train_data):
         data = gluon.utils.split_and_load(batch.data[0], ctx_list=ctx, batch_axis=0)
         label = gluon.utils.split_and_load(batch.label[0], ctx_list=ctx, batch_axis=0)
+        
+        # Autograd
         with ag.record():
             outputs = [net(X) for X in data]
             loss = [loss_fn(yhat, y) for yhat, y in zip(outputs, label)]
-        ag.backward(loss)
+        
+        # Backpropagation
+        #ag.backward(loss)
+        for l in loss:
+            l.backward()
+        
+        # Optimize
         trainer.step(batch_size)
+        
+        # Update metrics
+        train_loss += sum([l.sum().asscalar() for l in loss])
         acc_top1.update(label, outputs)
         acc_top5.update(label, outputs)
+        
         if log_interval and not (i + 1) % log_interval:
             _, top1 = acc_top1.get()
             _, top5 = acc_top5.get()
             err_top1, err_top5 = (1-top1, 1-top5)
-            print('Epoch[%d] Batch [%d]     Speed: %f samples/sec   top1-err=%f     top5-err=%f'%(
-                      epoch, i, batch_size*log_interval/(time.time()-btic), err_top1, err_top5))
+            print('Epoch[%d] Batch [%d]     Speed: %f samples/sec   top1-err=%f     top5-err=%f' %
+                      (epoch, i, batch_size*log_interval/(time.time()-btic), err_top1, err_top5))
             btic = time.time()
+	
 
     _, top1 = acc_top1.get()
     _, top5 = acc_top5.get()
@@ -187,14 +170,19 @@ for epoch in range(epochs):
     err_top1_val, err_top5_val = test(ctx, val_data)
     train_history.update([err_top1, err_top5, err_top1_val, err_top5_val])
 
-    print('[Epoch %d] training: err-top1=%f err-top5=%f'%(epoch, err_top1, err_top5))
-    print('[Epoch %d] time cost: %f'%(epoch, time.time()-tic))
-    print('[Epoch %d] validation: err-top1=%f err-top5=%f'%(epoch, err_top1_val, err_top5_val))
+    print('[Epoch %d] train_top5=%f train_top1=%f val_top5=%f val_top1=%f loss=%f time: %f' % 
+             (epoch, top5, top1, (1-err_top5_val), (1-err_top1_val), train_loss, time.time()-tic))
+    #print('[Epoch %d] training: err-top1=%f err-top5=%f'%(epoch, err_top1, err_top5))
+    #print('[Epoch %d] train_loss: %f'%(epoch, train_loss))
+    #print('[Epoch %d] time cost: %f'%(epoch, time.time()-tic))
+    #print('[Epoch %d] validation: err-top1=%f err-top5=%f'%(epoch, err_top1_val, err_top5_val))
 
 print("Training Phase Done.")
 
 
-# In[ ]:
+# In[5]:
 
 
-train_history.plot(['training-top1-err', 'validation-top1-err'])
+# https://cv.gluon.ai/api/utils.html
+train_history.plot(['training-top1-err', 'validation-top1-err'], save_path="/home/ubuntu/")
+
