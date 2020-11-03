@@ -2293,3 +2293,4 @@ Epoch[5] Batch [13899]:	Speed: 319.208961 samples/sec	top1-err=0.692247	top5-err
 Epoch[5] Batch [13949]:	Speed: 319.950386 samples/sec	top1-err=0.692239	top5-err=0.441988	train_loss=2979161.368347
 Epoch[5] Batch [13999]:	Speed: 318.065447 samples/sec	top1-err=0.692288	top5-err=0.442049	train_loss=2990053.111542
 Epoch[5] Batch [14049]:	Speed: 318.736099 samples/sec	top1-err=0.692290	top5-err=0.442065	train_loss=3000739.827835
+[Terminated by user]
