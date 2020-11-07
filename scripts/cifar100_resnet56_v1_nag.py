@@ -29,88 +29,109 @@ print("Imports successful")
 num_gpus = 1
 ctx = [mx.gpu(i) for i in range(num_gpus)]
 
-# Get the model CIFAR_ResNet20_v1, with 10 output classes, without pre-trained weights
-net = get_model('cifar_resnet20_v1', classes=10)
+net = get_model('CIFAR_ResNet56_v1', classes=100)
 net.initialize(mx.init.Xavier(), ctx = ctx)
 print("Model Init Done.")
 
 
-# In[4]:
+# In[5]:
 
+
+resize = 32
+mean_rgb = [0.485, 0.456, 0.406]
+std_rgb = [0.229, 0.224, 0.225]
+max_aspect_ratio = 4.0 / 3.0
+min_aspect_ratio = 3.0 / 4.0
+max_random_area = 1
+min_random_area = 0.08
+jitter_param = 0.4
+lighting_param = 0.1
 
 transform_train = transforms.Compose([
+    # Normalize the image with mean and standard deviation calculated across all images
+    transforms.Normalize(mean_rgb, std_rgb),
+    
     # Randomly crop an area and resize it to be 32x32, then pad it to be 40x40
-    gcv_transforms.RandomCrop(32, pad=4),
+    # transforms.RandomCrop(32, pad=4),
+    transforms.RandomResizedCrop(resize, scale=(min_random_area, max_random_area), 
+                                         ratio=(min_aspect_ratio, max_aspect_ratio)),
+    
     # Randomly flip the image horizontally
     transforms.RandomFlipLeftRight(),
+    
+    transforms.RandomColorJitter(brightness=jitter_param,
+                                 saturation=jitter_param,
+                                 hue = jitter_param,
+                                 contrast = 0),
+    transforms.RandomLighting(lighting_param),
+    
     # Transpose the image from height*width*num_channels to num_channels*height*width
     # and map values from [0, 255] to [0,1]
     transforms.ToTensor(),
-    # Normalize the image with mean and standard deviation calculated across all images
-    transforms.Normalize([0.4914, 0.4822, 0.4465], [0.2023, 0.1994, 0.2010])
 ])
 
 transform_test = transforms.Compose([
+    transforms.Resize(size=resize, keep_ratio=True),
     transforms.ToTensor(),
-    transforms.Normalize([0.4914, 0.4822, 0.4465], [0.2023, 0.1994, 0.2010])
+    transforms.Normalize(mean_rgb, std_rgb),
 ])
+print("Preprocessing Step Successful.")
 
 
-# 
-
-# In[5]:
+# In[ ]:
 
 
 # Batch Size for Each GPU
 per_device_batch_size = 128
+
 # Number of data loader workers
 num_workers = 8
+
 # Calculate effective total batch size
 batch_size = per_device_batch_size * num_gpus
 
 # Set train=True for training data
 # Set shuffle=True to shuffle the training data
 train_data = gluon.data.DataLoader(
-    gluon.data.vision.CIFAR10(train=True).transform_first(transform_train),
-    batch_size=batch_size, shuffle=True, last_batch='discard', num_workers=num_workers)
+    gluon.data.vision.CIFAR100(train=True).transform_first(transform_train),
+    batch_size=batch_size, 
+    shuffle=True, 
+    last_batch='discard', 
+    num_workers=num_workers)
 
 # Set train=False for validation data
+# Set shuffle=False to shuffle the testing data
 val_data = gluon.data.DataLoader(
-    gluon.data.vision.CIFAR10(train=False).transform_first(transform_test),
-    batch_size=batch_size, shuffle=False, num_workers=num_workers)
+    gluon.data.vision.CIFAR100(train=False).transform_first(transform_test),
+    batch_size=batch_size,
+    shuffle=False,
+    num_workers=num_workers)
+print("Initialization of train_data and val_data successful.")
 
 
-# In[6]:
+# In[ ]:
 
 
 # Learning rate decay factor
 lr_decay = 0.1
 # Epochs where learning rate decays
-lr_decay_epoch = [80, 160, np.inf]
+lr_decay_epoch = [30, 60, 90, np.inf]
 
-# Nesterov accelerated gradient descent
+# Nesterov accelerated gradient descent and set parameters (based of off 
+# reference papers and default values):
 optimizer = 'nag'
-# Set parameters
 optimizer_params = {'learning_rate': 0.1, 'wd': 0.0001, 'momentum': 0.9}
 
 # Define our trainer for net
 trainer = gluon.Trainer(net.collect_params(), optimizer, optimizer_params)
 
-
-# In[10]:
-
-
 loss_fn = gluon.loss.SoftmaxCrossEntropyLoss()
-
-
-# In[11]:
-
 
 train_metric = mx.metric.Accuracy()
 train_history = TrainingHistory(['training-error', 'validation-error'])
 
 
-# In[12]:
+# In[ ]:
 
 
 def test(ctx, val_data):
@@ -123,12 +144,13 @@ def test(ctx, val_data):
     return metric.get()
 
 
-# In[14]:
+# In[ ]:
 
 
-epochs = 240
+epochs = 120
 lr_decay_count = 0
 
+print("Training loop started:")
 for epoch in range(epochs):
     tic = time.time()
     train_metric.reset()
@@ -171,7 +193,6 @@ for epoch in range(epochs):
         (epoch, acc, val_acc, train_loss, time.time()-tic))
 
 # We can plot the metric scores with:
-
-train_history.plot()
+train_history.plot(['training_loss','validation_loss'], save_path="./cifar100_resnet56_v1_nag.png")
 print("Done.")
 
