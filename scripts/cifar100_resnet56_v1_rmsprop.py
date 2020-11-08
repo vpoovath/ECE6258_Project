@@ -145,7 +145,7 @@ def test(ctx, val_data):
     return metric.get()
 
 
-# In[7]:
+# In[ ]:
 
 
 epochs = 120
@@ -194,5 +194,6 @@ for epoch in range(epochs):
         (epoch, acc, val_acc, train_loss, time.time()-tic))
 
 # We can plot the metric scores with:
-train_history.plot(['training-error', 'validation-error'], save_path="./cifar100_resnet56_v1_nag.png")
+train_history.plot(['training-error', 'validation-error'], save_path="./cifar100_resnet56_v1_rmsprop.png")
 print("Done.")
+
