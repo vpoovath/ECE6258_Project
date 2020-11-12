@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 from __future__ import division
@@ -14,6 +14,7 @@ import mxnet as mx
 from mxnet import gluon, nd
 from mxnet import autograd as ag
 from mxnet.gluon import nn
+from datetime import datetime
 from mxnet.gluon.data.vision import transforms
 
 from gluoncv.model_zoo import get_model
@@ -22,7 +23,7 @@ from gluoncv.data import transforms as gcv_transforms
 print("Imports successful")
 
 
-# In[2]:
+# In[ ]:
 
 
 # number of GPUs to use
@@ -34,7 +35,7 @@ net.initialize(mx.init.Xavier(), ctx = ctx)
 print("Model Init Done.")
 
 
-# In[3]:
+# In[ ]:
 
 
 resize = 32
@@ -79,7 +80,7 @@ transform_test = transforms.Compose([
 print("Preprocessing Step Successful.")
 
 
-# In[4]:
+# In[ ]:
 
 
 # Batch Size for Each GPU
@@ -110,7 +111,7 @@ val_data = gluon.data.DataLoader(
 print("Initialization of train_data and val_data successful.")
 
 
-# In[5]:
+# In[ ]:
 
 
 # Learning rate decay factor
@@ -123,33 +124,39 @@ lr_decay_epoch = [30, 60, 90, np.inf]
 optimizer = 'nag'
 optimizer_params = {'learning_rate': 0.1, 'wd': 0.0001, 'momentum': 0.9}
 
-# Define our trainer for net
+# Define our trainer for net and the loss function
 trainer = gluon.Trainer(net.collect_params(), optimizer, optimizer_params)
-
 loss_fn = gluon.loss.SoftmaxCrossEntropyLoss()
 
-train_metric = mx.metric.Accuracy()
-train_history = TrainingHistory(['training-error', 'validation-error'])
+
+# In[ ]:
 
 
-# In[6]:
-
+acc_top1 = mx.metric.Accuracy()
+acc_top5 = mx.metric.TopKAccuracy(5)
 
 def test(ctx, val_data):
-    metric = mx.metric.Accuracy()
+    acc_top1.reset()
+    acc_top5.reset()
     for i, batch in enumerate(val_data):
-        data = gluon.utils.split_and_load(batch[0], ctx_list=ctx, batch_axis=0)
-        label = gluon.utils.split_and_load(batch[1], ctx_list=ctx, batch_axis=0)
+        data    = gluon.utils.split_and_load(batch[0], ctx_list=ctx, batch_axis=0)
+        label   = gluon.utils.split_and_load(batch[1], ctx_list=ctx, batch_axis=0)
         outputs = [net(X) for X in data]
-        metric.update(label, outputs)
-    return metric.get()
+        acc_top1.update(label, outputs)
+        acc_top5.update(label, outputs)
+    _, top1 = acc_top1.get()
+    _, top5 = acc_top5.get()
+    return (top1, top5)
 
 
-# In[7]:
+# In[ ]:
 
 
 epochs = 120
 lr_decay_count = 0
+train_metric = mx.metric.Accuracy()
+train_history = TrainingHistory(['training-error', 'validation-error'])
+train_history2 = TrainingHistory(['training-acc', 'val-acc-top1', 'val-acc-top5'])
 
 print("Training loop started:")
 for epoch in range(epochs):
@@ -165,13 +172,13 @@ for epoch in range(epochs):
     # Loop through each batch of training data
     for i, batch in enumerate(train_data):
         # Extract data and label
-        data = gluon.utils.split_and_load(batch[0], ctx_list=ctx, batch_axis=0)
+        data  = gluon.utils.split_and_load(batch[0], ctx_list=ctx, batch_axis=0)
         label = gluon.utils.split_and_load(batch[1], ctx_list=ctx, batch_axis=0)
 
         # AutoGrad
         with ag.record():
             output = [net(X) for X in data]
-            loss = [loss_fn(yhat, y) for yhat, y in zip(output, label)]
+            loss   = [loss_fn(yhat, y) for yhat, y in zip(output, label)]
 
         # Backpropagation
         for l in loss:
@@ -185,14 +192,23 @@ for epoch in range(epochs):
         train_metric.update(label, output)
 
     name, acc = train_metric.get()
+    
     # Evaluate on Validation data
-    name, val_acc = test(ctx, val_data)
+    #name, val_acc = test(ctx, val_data)
+    val_acc_top1, val_acc_top5 = test(ctx, val_data)
 
     # Update history and print metrics
-    train_history.update([1-acc, 1-val_acc])
-    print('[Epoch %d] train=%f val=%f loss=%f time: %f' %
-        (epoch, acc, val_acc, train_loss, time.time()-tic))
+    train_history.update([1-acc, 1-val_acc_top1])
+    train_history2.update([acc, val_acc_top1, val_acc_top5])
+    
+    print('[Epoch %d] train=%f val_top1=%f val_top5=%f loss=%f time: %f' %
+        (epoch, acc, val_acc_top1, val_acc_top5, train_loss, time.time()-tic))
 
 # We can plot the metric scores with:
-train_history.plot(['training-error', 'validation-error'], save_path="./cifar100_resnet56_v1_nag.png")
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+train_history.plot(['training-error', 'validation-error'], 
+                   save_path="./cifar100_resnet56_v1_nag_errors_{}.png".format(timestamp))
+train_history2.plot(['training-acc', 'val-acc-top1', 'val-acc-top5'],
+                   save_path="./cifar100_resnet56_v1_nag_accuracies_{}.png".format(timestamp))
 print("Done.")
+
