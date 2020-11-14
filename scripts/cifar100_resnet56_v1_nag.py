@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 from __future__ import division
@@ -23,7 +23,7 @@ from gluoncv.data import transforms as gcv_transforms
 print("Imports successful")
 
 
-# In[ ]:
+# In[2]:
 
 
 # number of GPUs to use
@@ -35,7 +35,7 @@ net.initialize(mx.init.Xavier(), ctx = ctx)
 print("Model Init Done.")
 
 
-# In[ ]:
+# In[3]:
 
 
 resize = 32
@@ -80,7 +80,7 @@ transform_test = transforms.Compose([
 print("Preprocessing Step Successful.")
 
 
-# In[ ]:
+# In[4]:
 
 
 # Batch Size for Each GPU
@@ -111,7 +111,7 @@ val_data = gluon.data.DataLoader(
 print("Initialization of train_data and val_data successful.")
 
 
-# In[ ]:
+# In[5]:
 
 
 # Learning rate decay factor
@@ -129,7 +129,7 @@ trainer = gluon.Trainer(net.collect_params(), optimizer, optimizer_params)
 loss_fn = gluon.loss.SoftmaxCrossEntropyLoss()
 
 
-# In[ ]:
+# In[6]:
 
 
 acc_top1 = mx.metric.Accuracy()
@@ -149,10 +149,10 @@ def test(ctx, val_data):
     return (top1, top5)
 
 
-# In[ ]:
+# In[7]:
 
 
-epochs = 120
+epochs = 200
 lr_decay_count = 0
 train_metric = mx.metric.Accuracy()
 train_history = TrainingHistory(['training-error', 'validation-error'])
@@ -211,4 +211,10 @@ train_history.plot(['training-error', 'validation-error'],
 train_history2.plot(['training-acc', 'val-acc-top1', 'val-acc-top5'],
                    save_path="./cifar100_resnet56_v1_nag_accuracies_{}.png".format(timestamp))
 print("Done.")
+
+
+# In[ ]:
+
+
+
 
