@@ -1,0 +1,44 @@
+Imports successful
+Model Init Done.
+Preprocessing Step Successful.
+Initialization of train_data and val_data successful.
+Training loop started:
+[Epoch 0] train=0.104227 val_top1=0.201000 val_top5=0.544200 loss=155356.529602 time: 34.199206
+[Epoch 1] train=0.230108 val_top1=0.275000 val_top5=0.677800 loss=124413.675781 time: 34.006020
+[Epoch 2] train=0.323417 val_top1=0.365800 val_top5=0.746700 loss=108222.077560 time: 35.473691
+[Epoch 3] train=0.391546 val_top1=0.387700 val_top5=0.768700 loss=97012.409622 time: 34.166285
+[Epoch 4] train=0.444671 val_top1=0.446800 val_top5=0.825400 loss=87932.083878 time: 33.975904
+[Epoch 5] train=0.489042 val_top1=0.477000 val_top5=0.823900 loss=80587.951416 time: 34.161834
+[Epoch 6] train=0.521514 val_top1=0.387000 val_top5=0.756200 loss=75332.300079 time: 34.203358
+[Epoch 7] train=0.548458 val_top1=0.499800 val_top5=0.853900 loss=71048.433014 time: 34.182451
+[Epoch 8] train=0.567568 val_top1=0.566400 val_top5=0.891300 loss=67811.498657 time: 34.006087
+[Epoch 9] train=0.586138 val_top1=0.565600 val_top5=0.885600 loss=64735.276146 time: 34.476077
+[Epoch 10] train=0.602143 val_top1=0.580400 val_top5=0.898900 loss=62050.262390 time: 34.042979
+[Epoch 11] train=0.619972 val_top1=0.613600 val_top5=0.910300 loss=59211.511772 time: 34.101947
+[Epoch 12] train=0.635216 val_top1=0.581100 val_top5=0.894100 loss=56726.921150 time: 35.840954
+[Epoch 13] train=0.648037 val_top1=0.603000 val_top5=0.910200 loss=54705.347694 time: 34.085889
+[Epoch 14] train=0.658193 val_top1=0.631700 val_top5=0.918600 loss=53002.884331 time: 34.238680
+[Epoch 15] train=0.668570 val_top1=0.619200 val_top5=0.912100 loss=51416.363083 time: 33.885287
+[Epoch 16] train=0.680449 val_top1=0.631200 val_top5=0.918500 loss=49822.115387 time: 34.022041
+[Epoch 17] train=0.687800 val_top1=0.659200 val_top5=0.932100 loss=48583.439201 time: 34.045567
+[Epoch 18] train=0.694992 val_top1=0.660000 val_top5=0.927900 loss=47323.118980 time: 34.105985
+[Epoch 19] train=0.701402 val_top1=0.643600 val_top5=0.922900 loss=46170.134094 time: 34.244783
+[Epoch 20] train=0.705108 val_top1=0.646700 val_top5=0.928400 loss=45573.777328 time: 35.582097
+[Epoch 21] train=0.715264 val_top1=0.672400 val_top5=0.922600 loss=44240.422142 time: 34.159937
+[Epoch 22] train=0.718490 val_top1=0.658000 val_top5=0.933200 loss=43403.014381 time: 33.936466
+[Epoch 23] train=0.722716 val_top1=0.658800 val_top5=0.931000 loss=42993.976227 time: 34.169188
+[Epoch 24] train=0.729087 val_top1=0.660600 val_top5=0.929800 loss=41688.959431 time: 34.209839
+[Epoch 25] train=0.731611 val_top1=0.646300 val_top5=0.922500 loss=41129.832985 time: 34.089680
+[Epoch 26] train=0.737861 val_top1=0.691400 val_top5=0.936600 loss=40378.624504 time: 33.839803
+[Epoch 27] train=0.744511 val_top1=0.675800 val_top5=0.934100 loss=39558.590134 time: 34.041031
+[Epoch 28] train=0.743870 val_top1=0.691000 val_top5=0.941900 loss=39437.606590 time: 34.103858
+[Epoch 29] train=0.752324 val_top1=0.670100 val_top5=0.934700 loss=38265.049706 time: 34.148648
+[Epoch 30] train=0.754607 val_top1=0.677900 val_top5=0.930600 loss=37865.236221 time: 34.304904
+[Epoch 31] train=0.757652 val_top1=0.674600 val_top5=0.933200 loss=37248.656284 time: 34.258792
+[Epoch 32] train=0.759535 val_top1=0.690900 val_top5=0.935300 loss=36892.785263 time: 34.106124
+[Epoch 33] train=0.765024 val_top1=0.658900 val_top5=0.926800 loss=36157.607750 time: 34.245498
+[Epoch 34] train=0.768229 val_top1=0.699500 val_top5=0.942800 loss=35738.446400 time: 34.134363
+[Epoch 35] train=0.772015 val_top1=0.664900 val_top5=0.931600 loss=35121.201427 time: 34.238302
+[Epoch 36] train=0.775421 val_top1=0.684300 val_top5=0.937300 loss=34491.822720 time: 34.119550
+[Epoch 37] train=0.774179 val_top1=0.692400 val_top5=0.941200 loss=34478.167492 time: 34.226663
+[Epoch 38] train=0.779207 val_top1=0.704300 val_top5=0.943300 loss=33738.432198 time: 34.150119
