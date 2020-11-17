@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 from __future__ import division
@@ -23,7 +23,7 @@ from gluoncv.data import transforms as gcv_transforms
 print("Imports successful")
 
 
-# In[2]:
+# In[ ]:
 
 
 # number of GPUs to use
@@ -35,7 +35,7 @@ net.initialize(mx.init.Xavier(), ctx = ctx)
 print("Model Init Done.")
 
 
-# In[3]:
+# In[ ]:
 
 
 resize = 32
@@ -80,11 +80,11 @@ transform_test = transforms.Compose([
 print("Preprocessing Step Successful.")
 
 
-# In[4]:
+# In[ ]:
 
 
 # Batch Size for Each GPU
-per_device_batch_size = 128
+per_device_batch_size = 256
 
 # Number of data loader workers
 num_workers = 2
@@ -109,9 +109,10 @@ val_data = gluon.data.DataLoader(
     shuffle=False,
     num_workers=num_workers)
 print("Initialization of train_data and val_data successful.")
+print("Per Device Batch Size: {}".format(per_device_batch_size))
 
 
-# In[5]:
+# In[ ]:
 
 
 # Learning rate decay factor
@@ -127,9 +128,11 @@ optimizer_params = {'learning_rate': 0.1, 'wd': 0.0001, 'momentum': 0.9}
 # Define our trainer for net and the loss function
 trainer = gluon.Trainer(net.collect_params(), optimizer, optimizer_params)
 loss_fn = gluon.loss.SoftmaxCrossEntropyLoss()
+print("Using {} Optimizer".format(optimizer))
+print(optimizer_params)
 
 
-# In[6]:
+# In[ ]:
 
 
 acc_top1 = mx.metric.Accuracy()
@@ -149,16 +152,16 @@ def test(ctx, val_data):
     return (top1, top5)
 
 
-# In[7]:
+# In[ ]:
 
 
-epochs = 200
+epochs = 120
 lr_decay_count = 0
 train_metric = mx.metric.Accuracy()
 train_history = TrainingHistory(['training-error', 'validation-error'])
 train_history2 = TrainingHistory(['training-acc', 'val-acc-top1', 'val-acc-top5'])
 
-print("Training loop started:")
+print("Training loop started for {} epochs:".format(epochs))
 for epoch in range(epochs):
     tic = time.time()
     train_metric.reset()
@@ -207,9 +210,13 @@ for epoch in range(epochs):
 # We can plot the metric scores with:
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 train_history.plot(['training-error', 'validation-error'], 
-                   save_path="./cifar100_resnet56_v1_nag_errors_{}.png".format(timestamp))
+                   save_path="./cifar100_resnet56_v1_{o}_{ep}epochs_errors_{t}.png".format(o=optimizer,
+                                                                                           ep=epochs,
+                                                                                           t=timestamp))
 train_history2.plot(['training-acc', 'val-acc-top1', 'val-acc-top5'],
-                   save_path="./cifar100_resnet56_v1_nag_accuracies_{}.png".format(timestamp))
+                   save_path="./cifar100_resnet56_v1_{o}_{ep}epochs_accuracies_{t}.png".format(o=optimizer,
+                                                                                               ep=epochs,
+                                                                                               t=timestamp))
 print("Done.")
 
 

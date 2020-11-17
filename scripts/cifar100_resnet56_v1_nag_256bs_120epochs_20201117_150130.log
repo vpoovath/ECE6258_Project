@@ -1,0 +1,8 @@
+Imports successful
+Model Init Done.
+Preprocessing Step Successful.
+Initialization of train_data and val_data successful.
+Per Device Batch Size: 256
+Using nag Optimizer
+{'learning_rate': 0.1, 'wd': 0.0001, 'momentum': 0.9}
+Training loop started for 120 epochs:
