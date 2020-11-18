@@ -1,0 +1,134 @@
+Note this might be a inaccurate result since the NAG's learning rate decay schedule was
+added on top of the RMSProp's own learning rate decay schedule. Therefore these results
+cannot yet be trusted until the RMSProp Model is re-run without removing the NAG's 
+learning rate decay schedule.
+
+Imports successful
+Model Init Done.
+Preprocessing Step Successful.
+Initialization of train_data and val_data successful.
+Per Device Batch Size: 256
+Using rmsprop Optimizer
+{'learning_rate': 0.001, 'gamma1': 0.9, 'gamma2': 0.9, 'epsilon': 1e-08}
+Training loop started for 120 epochs:
+[Epoch 0] train=0.144571 val_top1=0.207400 val_top5=0.574600 loss=141749.927307 time: 31.555119
+[Epoch 1] train=0.262740 val_top1=0.288500 val_top5=0.662100 loss=118848.313782 time: 31.419404
+[Epoch 2] train=0.340745 val_top1=0.341000 val_top5=0.716500 loss=104966.654541 time: 31.357839
+[Epoch 3] train=0.399780 val_top1=0.339600 val_top5=0.727800 loss=95438.104431 time: 31.264635
+[Epoch 4] train=0.440284 val_top1=0.442800 val_top5=0.825600 loss=88023.881805 time: 31.184660
+[Epoch 5] train=0.480569 val_top1=0.478100 val_top5=0.839700 loss=81656.409546 time: 31.146709
+[Epoch 6] train=0.511558 val_top1=0.427600 val_top5=0.818400 loss=76974.380402 time: 31.429422
+[Epoch 7] train=0.534675 val_top1=0.484000 val_top5=0.858300 loss=72985.340851 time: 31.389014
+[Epoch 8] train=0.556550 val_top1=0.540400 val_top5=0.881800 loss=69529.010437 time: 31.334226
+[Epoch 9] train=0.575901 val_top1=0.539400 val_top5=0.871700 loss=66415.463440 time: 31.104016
+[Epoch 10] train=0.589203 val_top1=0.514900 val_top5=0.869100 loss=64288.297394 time: 31.410435
+[Epoch 11] train=0.601923 val_top1=0.521100 val_top5=0.870900 loss=61726.429901 time: 32.765078
+[Epoch 12] train=0.618309 val_top1=0.529400 val_top5=0.860400 loss=59552.790070 time: 31.620790
+[Epoch 13] train=0.627925 val_top1=0.588300 val_top5=0.894700 loss=57426.512146 time: 31.511220
+[Epoch 14] train=0.642288 val_top1=0.579400 val_top5=0.898800 loss=55517.398544 time: 31.404505
+[Epoch 15] train=0.652584 val_top1=0.600600 val_top5=0.910500 loss=54097.011063 time: 31.450469
+[Epoch 16] train=0.660276 val_top1=0.608600 val_top5=0.916400 loss=52525.326324 time: 31.602435
+[Epoch 17] train=0.668990 val_top1=0.567300 val_top5=0.894600 loss=51104.064209 time: 31.251532
+[Epoch 18] train=0.676242 val_top1=0.613700 val_top5=0.914800 loss=49752.957565 time: 31.407959
+[Epoch 19] train=0.684996 val_top1=0.599800 val_top5=0.909600 loss=48410.440186 time: 32.841715
+[Epoch 20] train=0.694631 val_top1=0.620500 val_top5=0.910400 loss=46961.703934 time: 31.337669
+[Epoch 21] train=0.703345 val_top1=0.576300 val_top5=0.893400 loss=45785.563065 time: 31.439213
+[Epoch 22] train=0.708073 val_top1=0.636300 val_top5=0.918800 loss=44748.070847 time: 31.502761
+[Epoch 23] train=0.715585 val_top1=0.587900 val_top5=0.899900 loss=43705.703278 time: 31.380351
+[Epoch 24] train=0.722356 val_top1=0.646100 val_top5=0.926200 loss=42909.612015 time: 31.515490
+[Epoch 25] train=0.726803 val_top1=0.628000 val_top5=0.915100 loss=42013.654266 time: 31.335426
+[Epoch 26] train=0.733253 val_top1=0.610300 val_top5=0.925400 loss=40772.675446 time: 31.397856
+[Epoch 27] train=0.737760 val_top1=0.644600 val_top5=0.924400 loss=40064.315475 time: 31.461956
+[Epoch 28] train=0.742869 val_top1=0.661400 val_top5=0.929400 loss=39462.871231 time: 31.548007
+[Epoch 29] train=0.747276 val_top1=0.630000 val_top5=0.917500 loss=38658.602097 time: 31.498879
+[Epoch 30] train=0.791346 val_top1=0.726300 val_top5=0.950800 loss=32023.128487 time: 31.499414
+[Epoch 31] train=0.805909 val_top1=0.726500 val_top5=0.952800 loss=29647.286453 time: 31.338132
+[Epoch 32] train=0.811258 val_top1=0.728000 val_top5=0.952100 loss=28937.304398 time: 31.469745
+[Epoch 33] train=0.815665 val_top1=0.725800 val_top5=0.951400 loss=28405.922577 time: 31.518117
+[Epoch 34] train=0.817768 val_top1=0.724600 val_top5=0.951600 loss=27887.432350 time: 31.568424
+[Epoch 35] train=0.817929 val_top1=0.727700 val_top5=0.951000 loss=27732.292442 time: 31.666300
+[Epoch 36] train=0.821875 val_top1=0.727600 val_top5=0.951100 loss=27131.184982 time: 31.563766
+[Epoch 37] train=0.824259 val_top1=0.725100 val_top5=0.951400 loss=26870.942314 time: 31.509886
+[Epoch 38] train=0.825681 val_top1=0.729900 val_top5=0.951400 loss=26767.100067 time: 32.826374
+[Epoch 39] train=0.824780 val_top1=0.726500 val_top5=0.952300 loss=26720.276016 time: 31.498638
+[Epoch 40] train=0.828746 val_top1=0.724600 val_top5=0.951500 loss=26362.340874 time: 31.582187
+[Epoch 41] train=0.828225 val_top1=0.726200 val_top5=0.952600 loss=25961.076622 time: 31.586247
+[Epoch 42] train=0.830990 val_top1=0.729700 val_top5=0.949400 loss=25828.425179 time: 31.592333
+[Epoch 43] train=0.832873 val_top1=0.725600 val_top5=0.950600 loss=25480.656342 time: 31.673380
+[Epoch 44] train=0.834255 val_top1=0.725200 val_top5=0.951400 loss=25141.042343 time: 31.719985
+[Epoch 45] train=0.836038 val_top1=0.725600 val_top5=0.950600 loss=25087.099968 time: 31.316424
+[Epoch 46] train=0.837300 val_top1=0.730900 val_top5=0.950400 loss=24744.390305 time: 31.280216
+[Epoch 47] train=0.837800 val_top1=0.726200 val_top5=0.951300 loss=24565.994209 time: 31.522169
+[Epoch 48] train=0.840745 val_top1=0.727400 val_top5=0.952000 loss=24351.924026 time: 31.501135
+[Epoch 49] train=0.839704 val_top1=0.721800 val_top5=0.951100 loss=24204.068817 time: 31.452388
+[Epoch 50] train=0.840885 val_top1=0.728600 val_top5=0.950600 loss=24149.431129 time: 31.550319
+[Epoch 51] train=0.844812 val_top1=0.727800 val_top5=0.951200 loss=23778.391769 time: 31.614846
+[Epoch 52] train=0.845353 val_top1=0.728800 val_top5=0.952600 loss=23640.461472 time: 31.494812
+[Epoch 53] train=0.845132 val_top1=0.728500 val_top5=0.952200 loss=23303.189262 time: 31.506768
+[Epoch 54] train=0.846514 val_top1=0.724500 val_top5=0.952000 loss=23333.812386 time: 31.428102
+[Epoch 55] train=0.846094 val_top1=0.727100 val_top5=0.952000 loss=23245.651047 time: 31.547286
+[Epoch 56] train=0.845913 val_top1=0.728500 val_top5=0.951700 loss=23201.386986 time: 31.569327
+[Epoch 57] train=0.850581 val_top1=0.728100 val_top5=0.951700 loss=22675.158043 time: 31.500288
+[Epoch 58] train=0.851242 val_top1=0.729800 val_top5=0.951800 loss=22643.360107 time: 31.672940
+[Epoch 59] train=0.852204 val_top1=0.726800 val_top5=0.951000 loss=22580.369553 time: 31.583156
+[Epoch 60] train=0.857332 val_top1=0.727700 val_top5=0.952000 loss=21697.482269 time: 31.525234
+[Epoch 61] train=0.857131 val_top1=0.730800 val_top5=0.951900 loss=21697.236160 time: 31.260877
+[Epoch 62] train=0.857051 val_top1=0.731400 val_top5=0.952500 loss=21598.744888 time: 31.493320
+[Epoch 63] train=0.859275 val_top1=0.730100 val_top5=0.951600 loss=21384.762306 time: 31.483484
+[Epoch 64] train=0.860337 val_top1=0.729300 val_top5=0.952000 loss=21275.756622 time: 31.468564
+[Epoch 65] train=0.858694 val_top1=0.730400 val_top5=0.952200 loss=21379.307045 time: 31.521221
+[Epoch 66] train=0.861358 val_top1=0.728500 val_top5=0.951500 loss=21120.455688 time: 31.558998
+[Epoch 67] train=0.861579 val_top1=0.729400 val_top5=0.950600 loss=21255.365028 time: 31.589708
+[Epoch 68] train=0.862079 val_top1=0.730000 val_top5=0.951900 loss=21181.211128 time: 31.603744
+[Epoch 69] train=0.859756 val_top1=0.729900 val_top5=0.951700 loss=21158.413277 time: 31.475663
+[Epoch 70] train=0.861959 val_top1=0.730700 val_top5=0.951000 loss=21069.266518 time: 31.693261
+[Epoch 71] train=0.860557 val_top1=0.729500 val_top5=0.951800 loss=21272.377121 time: 31.384324
+[Epoch 72] train=0.860938 val_top1=0.731000 val_top5=0.952000 loss=21161.800613 time: 31.380985
+[Epoch 73] train=0.862720 val_top1=0.729800 val_top5=0.951100 loss=20943.276566 time: 31.470947
+[Epoch 74] train=0.862720 val_top1=0.728600 val_top5=0.951000 loss=20967.160500 time: 31.438860
+[Epoch 75] train=0.861398 val_top1=0.731200 val_top5=0.950800 loss=21158.278496 time: 31.589868
+[Epoch 76] train=0.861178 val_top1=0.731900 val_top5=0.951000 loss=20952.802322 time: 31.445727
+[Epoch 77] train=0.862179 val_top1=0.730600 val_top5=0.951200 loss=20826.867371 time: 31.709782
+[Epoch 78] train=0.861378 val_top1=0.730900 val_top5=0.951700 loss=20974.610893 time: 31.642914
+[Epoch 79] train=0.861318 val_top1=0.731600 val_top5=0.951100 loss=20858.084358 time: 31.484140
+[Epoch 80] train=0.860457 val_top1=0.730400 val_top5=0.951200 loss=21096.318382 time: 31.595772
+[Epoch 81] train=0.861458 val_top1=0.728900 val_top5=0.951000 loss=20878.285370 time: 31.688813
+[Epoch 82] train=0.861819 val_top1=0.732500 val_top5=0.951200 loss=21009.076653 time: 31.506156
+[Epoch 83] train=0.863542 val_top1=0.731900 val_top5=0.951100 loss=20788.945053 time: 31.560558
+[Epoch 84] train=0.861819 val_top1=0.729000 val_top5=0.951300 loss=20960.335022 time: 31.356510
+[Epoch 85] train=0.863261 val_top1=0.730400 val_top5=0.950900 loss=20832.939445 time: 31.617596
+[Epoch 86] train=0.863562 val_top1=0.731600 val_top5=0.951800 loss=20827.313858 time: 31.668369
+[Epoch 87] train=0.862560 val_top1=0.731300 val_top5=0.951500 loss=20661.312149 time: 31.641810
+[Epoch 88] train=0.863421 val_top1=0.732200 val_top5=0.950400 loss=20751.620018 time: 31.546898
+[Epoch 89] train=0.863542 val_top1=0.731200 val_top5=0.951400 loss=20736.456520 time: 31.499458
+[Epoch 90] train=0.864343 val_top1=0.731500 val_top5=0.951600 loss=20504.547417 time: 31.375118
+[Epoch 91] train=0.863141 val_top1=0.728900 val_top5=0.952000 loss=20751.521225 time: 31.707995
+[Epoch 92] train=0.866326 val_top1=0.731000 val_top5=0.951300 loss=20652.866905 time: 31.711083
+[Epoch 93] train=0.864042 val_top1=0.730500 val_top5=0.950800 loss=20622.123749 time: 31.515453
+[Epoch 94] train=0.864323 val_top1=0.731000 val_top5=0.950700 loss=20689.579971 time: 31.536596
+[Epoch 95] train=0.864283 val_top1=0.729700 val_top5=0.951900 loss=20647.556343 time: 31.901077
+[Epoch 96] train=0.866747 val_top1=0.730700 val_top5=0.951300 loss=20443.962914 time: 31.695422
+[Epoch 97] train=0.864944 val_top1=0.730800 val_top5=0.950700 loss=20515.929520 time: 31.674438
+[Epoch 98] train=0.863261 val_top1=0.729900 val_top5=0.951200 loss=20500.130013 time: 31.628889
+[Epoch 99] train=0.862921 val_top1=0.729800 val_top5=0.951000 loss=20800.130196 time: 31.566837
+[Epoch 100] train=0.865264 val_top1=0.730800 val_top5=0.950800 loss=20489.914810 time: 31.435466
+[Epoch 101] train=0.865084 val_top1=0.730200 val_top5=0.950900 loss=20653.734001 time: 31.615965
+[Epoch 102] train=0.866266 val_top1=0.731300 val_top5=0.951400 loss=20470.370941 time: 31.633814
+[Epoch 103] train=0.864323 val_top1=0.731300 val_top5=0.951200 loss=20608.867729 time: 31.511320
+[Epoch 104] train=0.863562 val_top1=0.729600 val_top5=0.950800 loss=20774.807213 time: 31.630673
+[Epoch 105] train=0.865345 val_top1=0.729700 val_top5=0.951400 loss=20408.911270 time: 31.423394
+[Epoch 106] train=0.863842 val_top1=0.730800 val_top5=0.950800 loss=20727.815125 time: 31.576743
+[Epoch 107] train=0.866206 val_top1=0.730600 val_top5=0.951300 loss=20488.147507 time: 31.517052
+[Epoch 108] train=0.864984 val_top1=0.731300 val_top5=0.951200 loss=20622.884636 time: 31.711048
+[Epoch 109] train=0.865104 val_top1=0.729600 val_top5=0.951300 loss=20390.310547 time: 31.607390
+[Epoch 110] train=0.863121 val_top1=0.730500 val_top5=0.950700 loss=20686.889244 time: 31.798703
+[Epoch 111] train=0.863101 val_top1=0.730300 val_top5=0.950900 loss=20663.005333 time: 31.522799
+[Epoch 112] train=0.864683 val_top1=0.730300 val_top5=0.951500 loss=20627.355415 time: 31.616617
+[Epoch 113] train=0.864203 val_top1=0.730800 val_top5=0.951000 loss=20589.492752 time: 31.471522
+[Epoch 114] train=0.865304 val_top1=0.731100 val_top5=0.951200 loss=20573.278580 time: 31.527139
+[Epoch 115] train=0.865365 val_top1=0.729200 val_top5=0.951200 loss=20528.420891 time: 31.351832
+[Epoch 116] train=0.865605 val_top1=0.731300 val_top5=0.951500 loss=20462.952148 time: 31.159990
+[Epoch 117] train=0.865024 val_top1=0.730000 val_top5=0.951000 loss=20719.823578 time: 31.431082
+[Epoch 118] train=0.863502 val_top1=0.730700 val_top5=0.950800 loss=20728.773918 time: 31.376885
+[Epoch 119] train=0.865805 val_top1=0.730300 val_top5=0.951100 loss=20522.294277 time: 31.434248
+Done.
