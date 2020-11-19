@@ -30,14 +30,8 @@ print("Imports successful")
 num_gpus = 1
 ctx = [mx.gpu(i) for i in range(num_gpus)]
 
-default_init = False
-
 net = get_model('cifar_resnet56_v1', classes=100)
-if default_init:
-    net.initialize(mx.init.Xavier(), ctx = ctx)
-else:
-    net.initialize(mx.init.MSRAPrelu(), ctx=ctx)
-    print("Using MSRA Prelu Init.")
+net.initialize(mx.init.Xavier(), ctx = ctx)
 print("Model Init Done.")
 
 
@@ -121,15 +115,12 @@ print("Per Device Batch Size: {}".format(per_device_batch_size))
 # In[ ]:
 
 
-# Learning rate decay factor
-lr_decay = 0.1
-# Epochs where learning rate decays
-lr_decay_epoch = [30, 60, 90, np.inf]
-
-# Nesterov accelerated gradient descent and set parameters (based of off 
-# reference papers and default values):
-optimizer = 'nag'
-optimizer_params = {'learning_rate': 0.1, 'wd': 0.0001, 'momentum': 0.9}
+# Adam optimizer using default parameters recommended in MachineLearningMastery.com
+optimizer = 'adam'
+optimizer_params = {'learning_rate': 0.001,
+                    'beta1': 0.9,
+                    'beta2': 0.999,
+                    'epsilon':10e-8}
 
 # Define our trainer for net and the loss function
 trainer = gluon.Trainer(net.collect_params(), optimizer, optimizer_params)
@@ -162,7 +153,6 @@ def test(ctx, val_data):
 
 
 epochs = 120
-lr_decay_count = 0
 train_metric = mx.metric.Accuracy()
 train_history = TrainingHistory(['training-error', 'validation-error'])
 train_history2 = TrainingHistory(['training-acc', 'val-acc-top1', 'val-acc-top5'])
@@ -172,11 +162,6 @@ for epoch in range(epochs):
     tic = time.time()
     train_metric.reset()
     train_loss = 0
-
-    # Learning rate decay
-    if epoch == lr_decay_epoch[lr_decay_count]:
-        trainer.set_learning_rate(trainer.learning_rate*lr_decay)
-        lr_decay_count += 1
 
     # Loop through each batch of training data
     for i, batch in enumerate(train_data):
