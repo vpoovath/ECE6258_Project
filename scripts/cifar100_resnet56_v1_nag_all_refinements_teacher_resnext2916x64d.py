@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 from __future__ import division
@@ -24,7 +24,7 @@ from gluoncv.data import transforms as gcv_transforms
 print("Imports successful")
 
 
-# In[2]:
+# In[4]:
 
 
 per_device_batch_size = 256 # Batch Size for Each GPU
@@ -42,10 +42,10 @@ num_batches = num_training_samples // batch_size
 
 # ## Smoothing
 
-# In[3]:
+# In[5]:
 
 
-label_smoothing = True
+label_smoothing = False
 def smooth(label, num_classes, eta=0.1):
     if isinstance(label, nd.NDArray):
         print("Label changed to list")
@@ -61,10 +61,10 @@ print("\nUsing label smoothing: {}".format(label_smoothing))
 
 # ## Mixup
 
-# In[4]:
+# In[6]:
 
 
-mixup = True
+mixup = False
 def mixup_transform(label, num_classes, lam=1, eta=0.0):
     if isinstance(label, nd.NDArray):
         print("Label changed to list")
@@ -82,7 +82,7 @@ print("Using mixup: {}".format(mixup))
 
 # # Model Init
 
-# In[5]:
+# In[7]:
 
 
 ctx = [mx.gpu(i) for i in range(num_gpus)]
@@ -118,10 +118,10 @@ print("\nModel Init Done.")
 # 
 # Additionally, need to understand the two ResNeXt architectures to understand why training time is much longer...:/
 
-# In[6]:
+# In[8]:
 
 
-distillation = True
+distillation = False
 if distillation:
     T = 20
     hard_weight = 0.5
@@ -147,7 +147,7 @@ else:
     print("\nNot using distillation")
 
 
-# In[7]:
+# In[9]:
 
 
 resize = 32
@@ -194,7 +194,7 @@ print("Preprocessing Step Successful.")
 
 # # Compose Image Transforms
 
-# In[8]:
+# In[10]:
 
 
 # Set train=True for training data
@@ -219,7 +219,7 @@ print("Per Device Batch Size: {}".format(per_device_batch_size))
 
 # # Training Settings
 
-# In[10]:
+# In[11]:
 
 
 if mixup:
@@ -227,20 +227,20 @@ if mixup:
 else:
     epochs = 120
     
-warmup_epochs = 20
+warmup_epochs = 5
 mixup_off_epochs = 0
 
 alpha = 0.2 # For Beta distribution sampling
 
 # Epochs where learning rate decays
 # Note that the default reference paper's code sets the lr_decay_epoch to [40,60]
-lr_decay_epochs = [30, 60, 90, np.inf]
-# lr_decay_epochs = [40, 80]
+#lr_decay_epochs = [30, 60, 90, np.inf]
+lr_decay_epochs = [40, 80]
 
 warmup_lr_mode = 'linear'
-lr_mode = 'cosine'
+lr_mode = 'poly'
 lr_decay = 0.1 # Learning rate decay factor
-target_lr = 0.0
+target_lr = 0
 
 # Sets up a linear warmup scheduler, followed by a cosine rate decay.
 # Consult the paper for the proper parameters (base_lr, target_lr, warmup_epochs, etc.)
@@ -302,7 +302,7 @@ print("\nTraining Settings Set Successfully.")
 
 # # Test Function
 
-# In[11]:
+# In[12]:
 
 
 acc_top1 = mx.metric.Accuracy()
@@ -327,7 +327,7 @@ def test(ctx, val_data):
 
 # # Training Loop
 
-# In[12]:
+# In[13]:
 
 
 train_metric = mx.metric.Accuracy()
