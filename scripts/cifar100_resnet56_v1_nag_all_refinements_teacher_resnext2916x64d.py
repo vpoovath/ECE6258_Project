@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[ ]:
 
 
 from __future__ import division
 
-import argparse, time, logging, random, math
+import argparse, time, logging, random, math, os, sys
 
 import numpy as np
 import mxnet as mx
@@ -24,10 +24,10 @@ from gluoncv.data import transforms as gcv_transforms
 print("Imports successful")
 
 
-# In[4]:
+# In[ ]:
 
 
-per_device_batch_size = 256 # Batch Size for Each GPU
+per_device_batch_size = 128 # Batch Size for Each GPU
 num_workers = 2             # Number of data loader workers
 dtype = 'float32'           # Default training data type if float32
 num_gpus = 1                # number of GPUs to use
@@ -41,11 +41,7 @@ num_batches = num_training_samples // batch_size
 
 
 # ## Smoothing
-
-# In[5]:
-
-
-label_smoothing = False
+label_smoothing = True
 def smooth(label, num_classes, eta=0.1):
     if isinstance(label, nd.NDArray):
         print("Label changed to list")
@@ -60,10 +56,6 @@ print("\nUsing label smoothing: {}".format(label_smoothing))
 
 
 # ## Mixup
-
-# In[6]:
-
-
 mixup = False
 def mixup_transform(label, num_classes, lam=1, eta=0.0):
     if isinstance(label, nd.NDArray):
@@ -82,7 +74,7 @@ print("Using mixup: {}".format(mixup))
 
 # # Model Init
 
-# In[7]:
+# In[ ]:
 
 
 ctx = [mx.gpu(i) for i in range(num_gpus)]
@@ -112,42 +104,52 @@ print("\nModel Init Done.")
 
 
 # # Distillation
+# Note that the reference paper uses a teacher model that was trained using cosine learning rate decay and label smoothing. 
+# 
+# Therefore I have created a separate notebook that trains the ResNext29_16x64d model using cosine learning rate decay and label smoothing on the CIFAR100 dataset. Training this ResNext29 architecture took nearly 10 hours...
+# 
+# What is left to do is now just to load the model architecture again, and load the parameters from the saved file.
+# 
+# ### The old approach, when not using my own trained model is:
 # Load the pre-trained CIFAR10 models and replace the final output layer with 100 classes instead of 10. This is demonstrated at this website: https://mxnet.apache.org/versions/1.7.0/api/python/docs/tutorials/packages/gluon/image/pretrained_models.html
 # 
 # Need to investigate WideResNet issue of having Top1-Val Accuracies becoming 0.00000 at the very beginning of training. 
 # 
 # Additionally, need to understand the two ResNeXt architectures to understand why training time is much longer...:/
 
-# In[8]:
-
-
 distillation = False
+
 if distillation:
+    curr_dir = os.getcwd()
+    param_file = os.path.join(curr_dir, "resnext29_teacher.params") 
     T = 20
     hard_weight = 0.5
     # Teacher model for distillation training
     # teacher_name = 'cifar_resnet110_v2'
     # teacher_name = 'cifar_resnet56_v2'
-    teacher_name = 'cifar_resnext29_16x64d'
     # teacher_name = 'cifar_wideresnet28_10' # Top1-Val is 0...
     # teacher_name = 'cifar_wideresnet40_8'  # Might cause the same problem
     # teacher_name = 'cifar_resnext29_32x4d' # This is apparently not available...?
     
-    teacher = get_model(teacher_name, pretrained=True, ctx=ctx)
-    #teacher.collect_params().initialize(ctx=ctx, force_reinit=True) # Don't do this.
+    teacher_name = 'cifar_resnext29_16x64d'
+#     teacher = get_model(teacher_name, pretrained=True, ctx=ctx)
+#     #teacher.collect_params().initialize(ctx=ctx, force_reinit=True) # Don't do this.
+#     teacher.cast(dtype)
+#     with teacher.name_scope():
+#         teacher.output = gluon.nn.Dense(num_classes)
+#         teacher.output.initialize(mx.init.Xavier(), ctx=ctx)
+    
+    teacher = get_model(teacher_name, classes=num_classes, ctx=ctx)
+    teacher.load_parameters(param_file)
     teacher.cast(dtype)
-
-    with teacher.name_scope():
-        teacher.output = gluon.nn.Dense(num_classes)
-        teacher.output.initialize(mx.init.Xavier(), ctx=ctx)
-
+        
     print(teacher.output)
     print("\nTeacher Model Init Done!")
 else:
     print("\nNot using distillation")
 
 
-# In[9]:
+# In[ ]:
 
 
 resize = 32
@@ -165,7 +167,7 @@ transform_train = transforms.Compose([
 #                                  scale=(min_random_area, max_random_area), 
 #                                  ratio=(min_aspect_ratio, max_aspect_ratio)),
     
-        # Randomly flip the image horizontally
+    # Randomly flip the image horizontally
     transforms.RandomFlipLeftRight(),
     
     transforms.RandomBrightness(brightness=jitter_param),
@@ -192,10 +194,7 @@ transform_test = transforms.Compose([
 print("Preprocessing Step Successful.")
 
 
-# # Compose Image Transforms
-
-# In[10]:
-
+# Compose Image Transforms
 
 # Set train=True for training data
 # Set shuffle=True to shuffle the training data
@@ -217,28 +216,22 @@ print("Initialization of train_data and val_data successful.")
 print("Per Device Batch Size: {}".format(per_device_batch_size))
 
 
-# # Training Settings
-
-# In[11]:
-
-
+# Training Settings
 if mixup:
     epochs = 200 # Mixup asks for longer training to converge better
 else:
     epochs = 120
     
-warmup_epochs = 5
+warmup_epochs = 20
 mixup_off_epochs = 0
 
 alpha = 0.2 # For Beta distribution sampling
 
-# Epochs where learning rate decays
-# Note that the default reference paper's code sets the lr_decay_epoch to [40,60]
-#lr_decay_epochs = [30, 60, 90, np.inf]
-lr_decay_epochs = [40, 80]
+lr_decay_epochs = [30, 60, 90, np.inf] # Epochs where learning rate decays
+# lr_decay_epochs = [40, 80]
 
 warmup_lr_mode = 'linear'
-lr_mode = 'poly'
+lr_mode = 'cosine'
 lr_decay = 0.1 # Learning rate decay factor
 target_lr = 0
 
@@ -300,11 +293,7 @@ print("Learning Rate Decay Epochs: {}".format(lr_decay_epochs))
 print("\nTraining Settings Set Successfully.")
 
 
-# # Test Function
-
-# In[12]:
-
-
+# Test Function
 acc_top1 = mx.metric.Accuracy()
 acc_top5 = mx.metric.TopKAccuracy(5)
 
@@ -325,11 +314,7 @@ def test(ctx, val_data):
     return (top1, top5)
 
 
-# # Training Loop
-
-# In[13]:
-
-
+# Training Loop
 train_metric = mx.metric.Accuracy()
 train_history = TrainingHistory(['training-error', 'validation-error'])
 train_history2 = TrainingHistory(['training-acc', 'val-acc-top1', 'val-acc-top5'])
@@ -419,12 +404,6 @@ train_history.plot(['training-error', 'validation-error'],
 train_history2.plot(['training-acc', 'val-acc-top1', 'val-acc-top5'],
                    save_path="./cifar100_resnet56_v1_{o}_{ep}epochs_accuracies_{t}.png".format(o=optimizer,
                                                                                                ep=epochs,
-                                                                                               t=timestamp))
+                                                                                           	   t=timestamp))
+# End Line
 print("Done.")
-
-
-# In[ ]:
-
-
-
-
