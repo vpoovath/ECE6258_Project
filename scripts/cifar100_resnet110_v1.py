@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Teacher Model
+# This notebook trains the ResNext29_16x64d teacher model. 
+# The reference paper mentions that the teacher model they used was trained using label smoothing and cosine learning rate decay. 
+# The same is done here, but, as seen before on ResNet56 v1 for CIFAR100, the warmup period is increased to T=20 to see if that improves the results of the teacher model, and later, on the student which the teacher trains. 
+# 
+# The parameters of the teacher model is saved to a .parmas file.
+# 
+# The time it takes to train this specific teacher model is roughly ~10 hours....
+
 # In[ ]:
 
 
@@ -27,7 +36,7 @@ print("Imports successful")
 # In[ ]:
 
 
-per_device_batch_size = 256 # Batch Size for Each GPU
+per_device_batch_size = 64 # Batch Size for Each GPU
 num_workers = 2             # Number of data loader workers
 dtype = 'float32'           # Default training data type if float32
 num_gpus = 1                # number of GPUs to use
@@ -64,7 +73,7 @@ print("\nUsing label smoothing: {}".format(label_smoothing))
 # In[ ]:
 
 
-mixup = True
+mixup = False
 def mixup_transform(label, num_classes, lam=1, eta=0.0):
     if isinstance(label, nd.NDArray):
         print("Label changed to list")
@@ -99,7 +108,7 @@ if use_group_norm:
     print("Using Group Normalization: {}".format(use_group_norm))
 
 default_init = True
-net = get_model('cifar_resnet56_v1', **kwargs)
+net = get_model('cifar_resnext29_16x64d', **kwargs)
 
 if default_init:
     net.initialize(mx.init.Xavier(), ctx = ctx)
@@ -109,55 +118,6 @@ else:
 
     net.cast(dtype)
 print("\nModel Init Done.")
-
-
-# # Distillation
-# Note that the reference paper uses a teacher model that was trained using cosine learning rate decay and label smoothing. 
-# 
-# Therefore I have created a separate notebook that trains the ResNext29_16x64d model using cosine learning rate decay and label smoothing on the CIFAR100 dataset. Training this ResNext29 architecture took nearly 10 hours...
-# 
-# What is left to do is now just to load the model architecture again, and load the parameters from the saved file.
-# 
-# ### The old approach, when not using my own trained model is:
-# Load the pre-trained CIFAR10 models and replace the final output layer with 100 classes instead of 10. This is demonstrated at this website: https://mxnet.apache.org/versions/1.7.0/api/python/docs/tutorials/packages/gluon/image/pretrained_models.html
-# 
-# Need to investigate WideResNet issue of having Top1-Val Accuracies becoming 0.00000 at the very beginning of training. 
-# 
-# Additionally, need to understand the two ResNeXt architectures to understand why training time is much longer...:/
-
-# In[ ]:
-
-
-distillation = False
-
-if distillation:
-    curr_dir = os.getcwd()
-    param_file = os.path.join(curr_dir, "resnext29_teacher.params") 
-    T = 20
-    hard_weight = 0.5
-    # Teacher model for distillation training
-    # teacher_name = 'cifar_resnet110_v2'
-    # teacher_name = 'cifar_resnet56_v2'
-    # teacher_name = 'cifar_wideresnet28_10' # Top1-Val is 0...
-    # teacher_name = 'cifar_wideresnet40_8'  # Might cause the same problem
-    # teacher_name = 'cifar_resnext29_32x4d' # This is apparently not available...?
-    
-    teacher_name = 'cifar_resnext29_16x64d'
-#     teacher = get_model(teacher_name, pretrained=True, ctx=ctx)
-#     #teacher.collect_params().initialize(ctx=ctx, force_reinit=True) # Don't do this.
-#     teacher.cast(dtype)
-#     with teacher.name_scope():
-#         teacher.output = gluon.nn.Dense(num_classes)
-#         teacher.output.initialize(mx.init.Xavier(), ctx=ctx)
-    
-    teacher = get_model(teacher_name, classes=num_classes, ctx=ctx)
-    teacher.load_parameters(param_file)
-    teacher.cast(dtype)
-        
-    print(teacher.output)
-    print("\nTeacher Model Init Done!")
-else:
-    print("\nNot using distillation")
 
 
 # In[ ]:
@@ -241,8 +201,7 @@ else:
     epochs = 120
     
 warmup_epochs = 20
-mixup_off_epochs = 20
-
+mixup_off_epochs = 0 # Modify this depending on the other mixup results with CIFAR_ResNet56
 alpha = 0.2 # For Beta distribution sampling
 
 lr_decay_epochs = [30, 60, 90, np.inf] # Epochs where learning rate decays
@@ -287,20 +246,14 @@ else:
 
 print("sparse label loss: {}".format(sparse_label_loss))
 
-if distillation:
-    loss_fn = gcv.loss.DistillationSoftmaxCrossEntropyLoss(temperature=T,
-                                                           hard_weight=hard_weight,
-                                                           sparse_label=sparse_label_loss)
-else:
-    loss_fn = gluon.loss.SoftmaxCrossEntropyLoss(sparse_label=sparse_label_loss)
+loss_fn = gluon.loss.SoftmaxCrossEntropyLoss(sparse_label=sparse_label_loss)
 
 train_metric = mx.metric.Accuracy()
 train_history = TrainingHistory(['training-error', 'validation-error'])
 train_history2 = TrainingHistory(['training-acc', 'val-acc-top1', 'val-acc-top5'])
 
 print("\nUsing label smoothing: {}".format(label_smoothing))
-print("\nUsing mixup: {}".format(mixup))
-print("Number of no-mixup epochs: {}".format(mixup_off_epochs))
+print("Using mixup: {}".format(mixup))
 
 print("\nUsing {} Optimizer".format(optimizer))
 print(optimizer_params)
@@ -375,20 +328,10 @@ for epoch in range(epochs):
             hard_label = label
             label = smooth(label, num_classes)
         
-        if distillation:
-            teacher_prob = [nd.softmax(teacher(X.astype(dtype, copy=False)) / T) for X in data]
-
         # AutoGrad
         with ag.record():
             outputs = [net(X.astype(dtype, copy=False)) for X in data]
-            if distillation:
-                loss = [loss_fn(yhat.astype(dtype, copy=False),
-                                y.astype(dtype, copy=False),
-                                p.astype(dtype, copy=False)) for yhat, y, p in zip(outputs, 
-                                                                                       label, 
-                                                                                       teacher_prob)]
-            else:
-                loss = [loss_fn(yhat, y) for yhat, y in zip(outputs, label)]
+            loss = [loss_fn(yhat, y) for yhat, y in zip(outputs, label)]
             
         # Backpropagation
         for l in loss:
@@ -433,4 +376,36 @@ train_history2.plot(['training-acc', 'val-acc-top1', 'val-acc-top5'],
                                                                                                ep=epochs,
                                                                                                t=timestamp))
 print("Done.")
+
+
+# # Save Net and Parameters to a File
+
+# In[ ]:
+
+
+filename = os.path.join(os.getcwd(), "resnext29_teacher_mixup{}.params",format(mixup))
+net.save_parameters(filename)
+print("Teacher Parameters saved to {}".format(filename))
+
+print("Saved.")
+
+
+# # Practice Loading Model Params
+# Will have to do this when using this CNN model for distillation training with the CIFAR_ResNet56_v1 model
+
+# In[ ]:
+
+
+teacher_name = 'cifar_resnext29_16x64d'
+teacher = get_model(teacher_name, classes=num_classes, ctx=ctx)
+teacher.load_parameters(filename)
+
+teacher.cast(dtype)
+print(teacher.output)
+
+
+# In[ ]:
+
+
+
 
