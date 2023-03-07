@@ -187,9 +187,10 @@ transform_train = transforms.Compose([
     
     transforms.RandomLighting(lighting_param),
     
-    # Randomly crop an area and resize it to be 32x32, then pad it to be 40x40
+    # Zero pad image to 40x40 and randomly crop an area and resize it to be
+    # 32x32:
     gcv_transforms.RandomCrop(32, pad=4),
-        
+
     # Transpose the image from height*width*num_channels to num_channels*height*width
     # and map values from [0, 255] to [0,1]
     transforms.ToTensor(),
